@@ -26,7 +26,7 @@ public class MainRegistry {
 	}
 	@EventHandler
 	public static void load(FMLInitializationEvent event){
-		
+		sddfgsdfgsdfgsdfgsdfgsdfg
 	}
 	@EventHandler
 	public static void PostLoad(FMLPostInitializationEvent PostEvent){
