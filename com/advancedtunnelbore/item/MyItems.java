@@ -15,14 +15,17 @@ public class MyItems {
 	
 	public static Item iStick;
 	public static Item sStick;
+	public static Item tStick;
 		
 	public static void initializeItem(){
 		iStick = new Item().setUnlocalizedName("iStick").setCreativeTab(MainRegistry.tabCustom);
 		sStick = new Item().setUnlocalizedName("sStick").setCreativeTab(MainRegistry.tabCustom);
+		tStick = new Item().setUnlocalizedName("tStick").setCreativeTab(MainRegistry.tabCustom);
 	}
 	
 	public static void registerItem(){
 		GameRegistry.registerItem(iStick, iStick.getUnlocalizedName());
 		GameRegistry.registerItem(sStick, sStick.getUnlocalizedName());
+		GameRegistry.registerItem(tStick, tStick.getUnlocalizedName());
 	}
 }
