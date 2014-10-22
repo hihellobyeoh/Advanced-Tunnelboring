@@ -18,9 +18,9 @@ public class MyItems {
 	public static Item tStick;
 		
 	public static void initializeItem(){
-		iStick = new Item().setUnlocalizedName("iStick").setCreativeTab(MainRegistry.tabCustom);
-		sStick = new Item().setUnlocalizedName("sStick").setCreativeTab(MainRegistry.tabCustom);
-		tStick = new Item().setUnlocalizedName("tStick").setCreativeTab(MainRegistry.tabCustom);
+		iStick = new Item().setUnlocalizedName("iStick").setCreativeTab(MainRegistry.tabTunnelB);
+		sStick = new Item().setUnlocalizedName("sStick").setCreativeTab(MainRegistry.tabTunnelB);
+		tStick = new Item().setUnlocalizedName("tStick").setCreativeTab(MainRegistry.tabTunnelB);
 	}
 	
 	public static void registerItem(){
