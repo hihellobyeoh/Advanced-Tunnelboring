@@ -1,2 +1,4 @@
 item.iStick.name=Iron Stick
+item.sStick.name=Steel Stick
 tile.ComStone.name=Compressed Stone
+itemGroup.tabTunnelBore=Advanced Tunnel Boring

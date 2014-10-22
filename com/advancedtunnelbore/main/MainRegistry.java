@@ -1,8 +1,7 @@
 package com.advancedtunnelbore.main;
 
-import com.advancedtunnelbore.blocks.CompressedStone;
-import com.advancedtunnelbore.item.IronStick;
-import com.advancedtunnelbore.item.SteelStick;
+import com.advancedtunnelbore.blocks.MyBlocks;
+import com.advancedtunnelbore.item.MyItems;
 import com.advancedtunnelbore.lib.RefStrings;
 
 import cpw.mods.fml.common.Mod;
@@ -20,15 +19,20 @@ import cpw.mods.fml.relauncher.SideOnly;
 @Mod(modid = RefStrings.MODID , name = RefStrings.NAME , version = RefStrings.VERSION)
 public class MainRegistry {
 	
+	public static CreativeTabs tabCustom = new CreativeTabs("tabTunnelBore") {
+	    @Override
+	    @SideOnly(Side.CLIENT)
+	    public Item getTabIconItem() {
+	        return MyItems.iStick;
+	    }
+	};
 	
 	@SidedProxy(clientSide = RefStrings.CLIENTSIDE, serverSide =RefStrings.SERVERSIDE)
 	public static ServerProxy proxy;
 	@EventHandler
 	public static void PreLoad(FMLPreInitializationEvent PreEvent){
-		CTabs.OtherInfo();
-		IronStick.mainRegistry();
-		CompressedStone.mainRegistry();
-		SteelStick.mainRegistry();
+		MyItems.mainRegistry();
+		MyBlocks.mainRegistry();
 		proxy.registerRenderinfo();
 	}
 	
