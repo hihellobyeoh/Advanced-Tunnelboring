@@ -17,7 +17,7 @@ public class MyBlocks {
 	public static Block ComStone;
 	
 	public static void initializeBlock(){
-		ComStone = new MyBlockTextures(Material.ground).setBlockName("ComStone").setCreativeTab(MainRegistry.tabCustom);
+		ComStone = new MyBlockTextures(Material.ground).setBlockName("ComStone").setCreativeTab(MainRegistry.tabTunnelB);
 	}
 	
 	public static void registerItem(){

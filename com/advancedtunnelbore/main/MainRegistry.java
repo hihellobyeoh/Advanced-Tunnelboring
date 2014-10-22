@@ -19,7 +19,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @Mod(modid = RefStrings.MODID , name = RefStrings.NAME , version = RefStrings.VERSION)
 public class MainRegistry {
 	
-	public static CreativeTabs tabCustom = new CreativeTabs("tabTunnelBore") {
+	public static CreativeTabs tabTunnelB = new CreativeTabs("tabTunnelBore") {
 	    @Override
 	    @SideOnly(Side.CLIENT)
 	    public Item getTabIconItem() {
