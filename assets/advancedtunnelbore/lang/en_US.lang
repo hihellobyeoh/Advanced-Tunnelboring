@@ -1,5 +1,9 @@
+item.rfIngot.name=Reinforced Iron Ingot
+item.stIngot.name=Steel Ingot
+item.hstIngot.name=Hardened Steel Ingot
+item.cstIngot.name=Carbon Steel Ingot
 item.iStick.name=Iron Stick
-item.sStick.name=Steel Stick
+item.stStick.name=Steel Stick
 item.tStick.name=Titanium Stick
 tile.ComStone.name=Compressed Stone
 itemGroup.tabTunnelBore=Advanced Tunnel Boring

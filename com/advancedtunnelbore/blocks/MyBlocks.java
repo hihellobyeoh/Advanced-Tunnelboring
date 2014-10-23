@@ -1,5 +1,6 @@
 package com.advancedtunnelbore.blocks;
 
+import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
 
 import net.minecraft.block.Block;
@@ -14,13 +15,13 @@ public class MyBlocks {
 		registerItem();
 	}
 	
-	public static Block ComStone;
+	public static Block CompressedStone;
 	
 	public static void initializeBlock(){
-		ComStone = new MyBlockTextures(Material.ground).setBlockName("ComStone").setCreativeTab(MainRegistry.tabTunnelB);
+		CompressedStone = new MyBlockTextures(Material.ground).setBlockName("ComStone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":com_stone_1");
 	}
 	
 	public static void registerItem(){
-		GameRegistry.registerBlock(ComStone, ComStone.getUnlocalizedName());
+		GameRegistry.registerBlock(CompressedStone, CompressedStone.getUnlocalizedName());
 	}
 }

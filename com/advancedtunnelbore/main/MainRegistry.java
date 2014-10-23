@@ -35,7 +35,7 @@ public class MainRegistry {
 		MyBlocks.mainRegistry();
 		proxy.registerRenderinfo();
 	}
-	//FOLLOW THIS VIDEO FOR TEXTURES: http://www.youtube.com/watch?v=E-c3QiHRi9U&list=UUrsaesoinvX126cv-ctAwBw
+	
 	@EventHandler
 	public static void load(FMLInitializationEvent event){
 		
