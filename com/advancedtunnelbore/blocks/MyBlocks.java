@@ -15,13 +15,18 @@ public class MyBlocks {
 		registerItem();
 	}
 	
-	public static Block CompressedStone;
+	public static Block comStone;
+	public static Block tOre;
 	
 	public static void initializeBlock(){
-		CompressedStone = new MyBlockTextures(Material.ground).setBlockName("ComStone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":com_stone_1");
+		comStone = new MyBlockTextures(Material.rock).setBlockName("comStone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":com_stone_1").setStepSound(Block.soundTypePiston);
+		tOre = new MyBlockTextures(Material.rock).setBlockName("tOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + "void").setStepSound(Block.soundTypePiston);
 	}
 	
 	public static void registerItem(){
-		GameRegistry.registerBlock(CompressedStone, CompressedStone.getUnlocalizedName());
+		GameRegistry.registerBlock(comStone, comStone.getUnlocalizedName());
+		GameRegistry.registerBlock(tOre, tOre.getUnlocalizedName());
 	}
 }
+
+

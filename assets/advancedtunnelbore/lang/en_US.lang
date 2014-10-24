@@ -2,8 +2,60 @@ item.rfIngot.name=Reinforced Iron Ingot
 item.stIngot.name=Steel Ingot
 item.hstIngot.name=Hardened Steel Ingot
 item.cstIngot.name=Carbon Steel Ingot
+item.tIngot.name=Titanium Ingot
+
+item.iwheel.name=Iron Wheel
+item.rfwheel.name=Reinforced Iron Wheel
+item.stwheel.name=Steel Wheel
+item.hstwheel.name=Hardened Steel Wheel
+item.cstwheel.name=Carbon Steel Wheel
+item.twheel.name=Titanium Wheel
+
+item.iaxle.name=Iron Axle
+item.rfaxle.name=Reinforced Iron Axle
+item.staxle.name=Steel Axle
+item.hstaxle.name=Hardened Steel Axle
+item.cstaxle.name=Carbon Steel Axle
+item.taxle.name=Titanium Axle
+
+item.igear.name=Iron Gear
+item.rfgear.name=Reinforced Iron Gear
+item.stgear.name=Steel Gear
+item.hstgear.name=Hardened Steel Gear
+item.cstgear.name=Carbon Steel Gear
+item.tgear.name=Titanium Gear
+
+item.igearbx.name=Iron Gearbox
+item.rfgearbx.name=Reinforced Iron Gearbox
+item.stgearbx.name=Steel Gearbox
+item.hstgearbx.name=Hardened Steel Gearbox
+item.cstgearbx.name=Carbon Steel Gearbox
+item.tgearbx.name=Titanium Gearbox
+
+item.irod.name=Iron Rod
+item.rfrod.name=Reinforced Rod
+item.strod.name=Steel Rod
+item.hstrod.name=Hardened Steel Rod
+item.cstrod.name=Carbon Steel Rod
+item.trod.name=Titanium Rod
+
+item.ibeam.name=Iron Beam
+item.rfbeam.name=Reinforced Iron Beam
+item.stbeam.name=Steel Beam
+item.hstbeam.name=Hardened Steel Beam
+item.cstbeam.name=Carbon Steel Beam
+item.tbeam.name=Titanium Beam
+
+item.coaldust.name=Coal Dust
+
 item.iStick.name=Iron Stick
+item.rfStick.name=Reinforced Iron Stick
 item.stStick.name=Steel Stick
+item.hstStick.name=Hardened Steel Stick
+item.cstStick.name=Carbon Steel Stick
 item.tStick.name=Titanium Stick
-tile.ComStone.name=Compressed Stone
+
+tile.comStone.name=Compressed Stone
+tile.tOre.name=Titanium Ore
+
 itemGroup.tabTunnelBore=Advanced Tunnel Boring
