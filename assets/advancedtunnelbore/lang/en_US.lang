@@ -47,6 +47,9 @@ item.cstbeam.name=Carbon Steel Beam
 item.tbeam.name=Titanium Beam
 
 item.coaldust.name=Coal Dust
+item.ilmenitedust.name=Ilmenite Dust
+item.tdust.name=Titanium Dust
+item.idust.name=Iron Dust
 
 item.iStick.name=Iron Stick
 item.rfStick.name=Reinforced Iron Stick
@@ -56,6 +59,8 @@ item.cstStick.name=Carbon Steel Stick
 item.tStick.name=Titanium Stick
 
 tile.comStone.name=Compressed Stone
-tile.tOre.name=Titanium Ore
+tile.sandTOre.name=Ilmenite Ore
+tile.sandStoneTOre.name=Ilmenite Ore
+tile.stoneTOre.name=Ilmenite Ore
 
 itemGroup.tabTunnelBore=Advanced Tunnel Boring
