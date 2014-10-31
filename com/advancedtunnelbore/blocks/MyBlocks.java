@@ -26,6 +26,7 @@ public class MyBlocks {
 		sandStoneTOre = new MyBlockTextures(Material.rock).setBlockName("sandStoneTOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":sandstone_titanium_ore").setStepSound(Block.soundTypePiston);
 		stoneTOre = new MyBlockTextures(Material.rock).setBlockName("stoneTOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":stone_titanium_ore").setStepSound(Block.soundTypePiston);
 		
+		
 	}
 	
 	public static void registerItem(){

@@ -33,6 +33,7 @@ public class MainRegistry {
 	public static void PreLoad(FMLPreInitializationEvent PreEvent){
 		MyItems.mainRegistry();
 		MyBlocks.mainRegistry();
+		CraftingManager.mainRegistry();
 		proxy.registerRenderinfo();
 	}
 	
