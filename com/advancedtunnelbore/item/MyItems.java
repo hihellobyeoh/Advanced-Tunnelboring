@@ -1,160 +1,105 @@
 package com.advancedtunnelbore.item;
 
+import com.advancedtunnelbore.lib.MethodStorage;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
+import com.advancedtunnelbore.tools.TitaniumPickaxe;
+import com.advancedtunnelbore.tools.TitaniumSword;
+import com.advancedtunnelbore.tools.TitaniumSpade;
+import com.advancedtunnelbore.tools.TitaniumAxe;
+import com.advancedtunnelbore.tools.TitaniumHoe;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemStack;
 
 public class MyItems {
 
 	public static void mainRegistry(){
-		initializeItem();
 		registerItem();
 	}
 	
 	//Ingots
-	public static Item rfIngot;
-	public static Item stIngot;
-	public static Item hstIngot;
-	public static Item cstIngot;
-	public static Item tIngot;
+	public static Item rfIngot = new Item().setUnlocalizedName("rfIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item stIngot = new Item().setUnlocalizedName("stIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item hstIngot = new Item().setUnlocalizedName("hstIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstIngot = new Item().setUnlocalizedName("cstIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item tIngot = new Item().setUnlocalizedName("tIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Wheels
-	public static Item iwheel;
-	public static Item rfwheel;
-	public static Item stwheel;
-	public static Item hstwheel;
-	public static Item cstwheel;
-	public static Item twheel;
+	public static Item iwheel = new Item().setUnlocalizedName("iwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":iwheel");
+	public static Item rfwheel = new Item().setUnlocalizedName("rfwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":riwheel");
+	public static Item stwheel = new Item().setUnlocalizedName("stwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":swheel");
+	public static Item hstwheel = new Item().setUnlocalizedName("hstwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":hswheel");
+	public static Item cstwheel = new Item().setUnlocalizedName("cstwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":cswheel");
+	public static Item twheel = new Item().setUnlocalizedName("twheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":twheel");
 	
 	//Axles
-	public static Item iaxle;
-	public static Item rfaxle;
-	public static Item staxle;
-	public static Item hstaxle;
-	public static Item cstaxle;
-	public static Item taxle;
+	public static Item iaxle = new Item().setUnlocalizedName("iaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item rfaxle = new Item().setUnlocalizedName("rfaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item staxle = new Item().setUnlocalizedName("staxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item hstaxle = new Item().setUnlocalizedName("hstaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstaxle = new Item().setUnlocalizedName("cstaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item taxle = new Item().setUnlocalizedName("taxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Gears
-	public static Item igear;
-	public static Item rfgear;
-	public static Item stgear;
-	public static Item hstgear;
-	public static Item cstgear;
-	public static Item tgear;
+	public static Item igear = new Item().setUnlocalizedName("igear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item rfgear = new Item().setUnlocalizedName("rfgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item stgear = new Item().setUnlocalizedName("stgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item hstgear = new Item().setUnlocalizedName("hstgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstgear = new Item().setUnlocalizedName("cstgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item tgear = new Item().setUnlocalizedName("tgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Gearboxes
-	public static Item igearbx;
-	public static Item rfgearbx;
-	public static Item stgearbx;
-	public static Item hstgearbx;
-	public static Item cstgearbx;
-	public static Item tgearbx;
+	public static Item igearbx = new Item().setUnlocalizedName("igearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item rfgearbx = new Item().setUnlocalizedName("rfgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item stgearbx = new Item().setUnlocalizedName("stgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item hstgearbx = new Item().setUnlocalizedName("hstgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstgearbx = new Item().setUnlocalizedName("cstgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item tgearbx = new Item().setUnlocalizedName("tgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Rods
-	public static Item irod;
-	public static Item rfrod;
-	public static Item strod;
-	public static Item hstrod;
-	public static Item cstrod;
-	public static Item trod;
+	public static Item irod = new Item().setUnlocalizedName("irod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item rfrod = new Item().setUnlocalizedName("rfrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item strod = new Item().setUnlocalizedName("strod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item hstrod = new Item().setUnlocalizedName("hstrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstrod = new Item().setUnlocalizedName("cstrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item trod = new Item().setUnlocalizedName("trod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Beams
-	public static Item ibeam;
-	public static Item rfbeam;
-	public static Item stbeam;
-	public static Item hstbeam;
-	public static Item cstbeam;
-	public static Item tbeam;
+	public static Item ibeam = new Item().setUnlocalizedName("ibeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item rfbeam = new Item().setUnlocalizedName("rfbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item stbeam = new Item().setUnlocalizedName("stbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item hstbeam = new Item().setUnlocalizedName("hstbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstbeam = new Item().setUnlocalizedName("cstbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item tbeam = new Item().setUnlocalizedName("tbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Sticks
-	public static Item iStick;
-	public static Item rfStick;
-	public static Item stStick;
-	public static Item hstStick;
-	public static Item cstStick;
-	public static Item tStick;
+	public static Item iStick = new Item().setUnlocalizedName("iStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":istick");
+	public static Item rfStick = new Item().setUnlocalizedName("rfStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item stStick = new Item().setUnlocalizedName("stStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item hstStick = new Item().setUnlocalizedName("hstStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstStick = new Item().setUnlocalizedName("cstStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item tStick = new Item().setUnlocalizedName("tStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Dusts
-	public static Item coaldust;
-	public static Item ilmenitedust;
-	public static Item tdust;
-	public static Item idust;
+	public static Item coaldust = new Item().setUnlocalizedName("coaldust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item ilmenitedust = new Item().setUnlocalizedName("ilmenitedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item tdust = new Item().setUnlocalizedName("tdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item idust = new Item().setUnlocalizedName("idust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	
+	//Tools
+	//public static ToolMaterial titanium = MethodStorage.addToolMaterial("Titanium", 3, 4000, 15.0F, 5.0F, 50);
+	//public final static Item TitaniumPickaxe = new TitaniumPickaxe(titanium).setUnlocalizedName("tPick").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
+	//public final static Item TitaniumSword = new TitaniumSword(titanium).setUnlocalizedName("tSword").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
+	//public final static Item TitaniumSpade = new TitaniumSpade(titanium).setUnlocalizedName("tSpade").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
+	//public final static Item TitaniumAxe = new TitaniumAxe(titanium).setUnlocalizedName("tAxe").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
+	//public final static Item TitaniumHoe = new TitaniumHoe(titanium).setUnlocalizedName("tHoe").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
 	
 		
-	public static void initializeItem(){
-		
-		//Ingots
-		rfIngot = new Item().setUnlocalizedName("rfIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		stIngot = new Item().setUnlocalizedName("stIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		hstIngot = new Item().setUnlocalizedName("hstIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		cstIngot = new Item().setUnlocalizedName("cstIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		tIngot = new Item().setUnlocalizedName("tIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		
-		//Wheels
-		iwheel = new Item().setUnlocalizedName("iwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":iwheel");
-		rfwheel = new Item().setUnlocalizedName("rfwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":riwheel");
-		stwheel = new Item().setUnlocalizedName("stwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":swheel");
-		hstwheel = new Item().setUnlocalizedName("hstwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":hswheel");
-		cstwheel = new Item().setUnlocalizedName("cstwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":cswheel");
-		twheel = new Item().setUnlocalizedName("twheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":twheel");
-		
-		//Axles
-		iaxle = new Item().setUnlocalizedName("iaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		rfaxle = new Item().setUnlocalizedName("rfaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		staxle = new Item().setUnlocalizedName("staxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		hstaxle = new Item().setUnlocalizedName("hstaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		cstaxle = new Item().setUnlocalizedName("cstaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		taxle = new Item().setUnlocalizedName("taxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		
-		//Gears
-		igear = new Item().setUnlocalizedName("igear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		rfgear = new Item().setUnlocalizedName("rfgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		stgear = new Item().setUnlocalizedName("stgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		hstgear = new Item().setUnlocalizedName("hstgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		cstgear = new Item().setUnlocalizedName("cstgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		tgear = new Item().setUnlocalizedName("tgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		
-		//Gearboxes
-		igearbx = new Item().setUnlocalizedName("igearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		rfgearbx = new Item().setUnlocalizedName("rfgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		stgearbx = new Item().setUnlocalizedName("stgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		hstgearbx = new Item().setUnlocalizedName("hstgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		cstgearbx = new Item().setUnlocalizedName("cstgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		tgearbx = new Item().setUnlocalizedName("tgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		
-		//Rods
-		irod = new Item().setUnlocalizedName("irod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		rfrod = new Item().setUnlocalizedName("rfrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		strod = new Item().setUnlocalizedName("strod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		hstrod = new Item().setUnlocalizedName("hstrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		cstrod = new Item().setUnlocalizedName("cstrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		trod = new Item().setUnlocalizedName("trod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		
-		//Beams
-		ibeam = new Item().setUnlocalizedName("ibeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		rfbeam = new Item().setUnlocalizedName("rfbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		stbeam = new Item().setUnlocalizedName("stbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		hstbeam = new Item().setUnlocalizedName("hstbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		cstbeam = new Item().setUnlocalizedName("cstbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		tbeam = new Item().setUnlocalizedName("tbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		
-		//Sticks
-		iStick = new Item().setUnlocalizedName("iStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":istick");
-		rfStick = new Item().setUnlocalizedName("rfStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		stStick = new Item().setUnlocalizedName("stStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		hstStick = new Item().setUnlocalizedName("hstStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		cstStick = new Item().setUnlocalizedName("cstStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		tStick = new Item().setUnlocalizedName("tStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		
-		//Dusts
-		coaldust = new Item().setUnlocalizedName("coaldust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		ilmenitedust = new Item().setUnlocalizedName("ilmenitedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		tdust = new Item().setUnlocalizedName("tdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-		idust = new Item().setUnlocalizedName("idust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
-	}
+	
 	
 	public static void registerItem(){
 		
@@ -226,6 +171,13 @@ public class MyItems {
 		GameRegistry.registerItem(ilmenitedust, ilmenitedust.getUnlocalizedName());
 		GameRegistry.registerItem(tdust, tdust.getUnlocalizedName());
 		GameRegistry.registerItem(idust, idust.getUnlocalizedName());
+		
+		//Tools
+		//GameRegistry.registerItem(TitaniumPickaxe, TitaniumPickaxe.getUnlocalizedName());
+		//GameRegistry.registerItem(TitaniumSword, TitaniumSword.getUnlocalizedName());
+		//GameRegistry.registerItem(TitaniumAxe, TitaniumAxe.getUnlocalizedName());
+		//GameRegistry.registerItem(TitaniumSpade, TitaniumSpade.getUnlocalizedName());
+		//GameRegistry.registerItem(TitaniumHoe, TitaniumHoe.getUnlocalizedName());
 		
 	}
 }

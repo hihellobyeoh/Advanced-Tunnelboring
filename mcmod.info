@@ -1,0 +1,16 @@
+[
+{
+  "modid": "advancedtunnelbore",
+  "name": "Advanced Tunnel Boring",
+  "description": "Lets make the perfect tunnel. Required forge build 1225 or later",
+  "version": "0.0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Hihellobyeoh, NatsuruSenou, Skye"],
+  "credits": "The Forge and FML guys, for making this example, and to TheMchewy for his videos which helped me when I got stuck.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
