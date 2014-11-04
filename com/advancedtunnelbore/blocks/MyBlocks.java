@@ -17,7 +17,7 @@ public class MyBlocks {
 	}
 
 	public static Block comStone = new ComStone(Material.rock).setBlockName("comStone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":com_stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
-	public static Block tOre = new TOre(Material.rock).setBlockName("tOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":tianium_ore").setStepSound(Block.soundTypePiston).setHardness(3F);
+	public static Block tOre = new TOre(Material.rock).setBlockName("tOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":titanium_ore").setStepSound(Block.soundTypePiston).setHardness(3F);
 	
 	private static void initializeBlock() {
 		

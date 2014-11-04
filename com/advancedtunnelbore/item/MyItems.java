@@ -1,13 +1,8 @@
 package com.advancedtunnelbore.item;
 
-import com.advancedtunnelbore.lib.MethodStorage;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
-import com.advancedtunnelbore.tools.TitaniumPickaxe;
-import com.advancedtunnelbore.tools.TitaniumSword;
-import com.advancedtunnelbore.tools.TitaniumSpade;
-import com.advancedtunnelbore.tools.TitaniumAxe;
-import com.advancedtunnelbore.tools.TitaniumHoe;
+
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
@@ -20,6 +15,9 @@ public class MyItems {
 	public static void mainRegistry(){
 		registerItem();
 	}
+	//Impure Ingots
+	public static Item stImpureIngot = new Item().setUnlocalizedName("stImpureIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
+	public static Item cstImpureIngot = new Item().setUnlocalizedName("cstImpureIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
 	//Ingots
 	public static Item rfIngot = new Item().setUnlocalizedName("rfIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
@@ -90,18 +88,11 @@ public class MyItems {
 	public static Item tdust = new Item().setUnlocalizedName("tdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	public static Item idust = new Item().setUnlocalizedName("idust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + "void");
 	
-	//Tools
-	//public static ToolMaterial titanium = MethodStorage.addToolMaterial("Titanium", 3, 4000, 15.0F, 5.0F, 50);
-	//public final static Item TitaniumPickaxe = new TitaniumPickaxe(titanium).setUnlocalizedName("tPick").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
-	//public final static Item TitaniumSword = new TitaniumSword(titanium).setUnlocalizedName("tSword").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
-	//public final static Item TitaniumSpade = new TitaniumSpade(titanium).setUnlocalizedName("tSpade").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
-	//public final static Item TitaniumAxe = new TitaniumAxe(titanium).setUnlocalizedName("tAxe").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
-	//public final static Item TitaniumHoe = new TitaniumHoe(titanium).setUnlocalizedName("tHoe").setCreativeTab(MainRegistry.tabTunnelB).setTextureName(RefStrings.MODID + "void");
-	
-		
-	
-	
 	public static void registerItem(){
+		
+		//Impure Ingots
+		GameRegistry.registerItem(stImpureIngot, stImpureIngot.getUnlocalizedName());
+		GameRegistry.registerItem(cstImpureIngot, cstImpureIngot.getUnlocalizedName());
 		
 		//Ingots
 		GameRegistry.registerItem(rfIngot, rfIngot.getUnlocalizedName());
