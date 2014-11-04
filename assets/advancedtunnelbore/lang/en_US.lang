@@ -1,3 +1,6 @@
+item.stImpureIngot.name=Dirty Iron
+item.cstImpureIngot.name=Dirty Steel
+
 item.rfIngot.name=Refined Iron Ingot
 item.stIngot.name=Steel Ingot
 item.hstIngot.name=Hardened Steel Ingot
@@ -60,6 +63,11 @@ item.tStick.name=Titanium Stick
 
 tile.comStone.name=Compressed Stone
 tile.tOre.name=Ilmenite Ore
+tile.rfBlock.name=Refined Iron Block
+tile.stBlock.name=Steel Block
+tile.hstBlock.name=Hardened Steel Block
+tile.cstBlock.name=Carbon Steel Block
+tile.tBlock.name=Titanium Block
 
 
 itemGroup.tabTunnelBore=Advanced Tunnel Boring

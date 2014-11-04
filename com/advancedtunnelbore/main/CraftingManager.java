@@ -29,19 +29,25 @@ public class CraftingManager {
 		GameRegistry.addRecipe(new ItemStack(MyItems.tStick), new Object[]{"X","X",'X', MyItems.tIngot});
 		
 		//Beams
-		GameRegistry.addRecipe(new ItemStack(MyItems.ibeam), new Object[]{"XXX"," X ","XXX", 'X', Items.iron_ingot});
-		GameRegistry.addRecipe(new ItemStack(MyItems.ibeam), new Object[]{"X X","XXX","X X", 'X', Items.iron_ingot});
+		GameRegistry.addRecipe(new ItemStack(MyItems.ibeam), new Object[]{"XXX","XXX", 'X', Blocks.iron_block});
 		GameRegistry.addRecipe(new ItemStack(MyItems.rfbeam), new Object[]{"XXX"," X ","XXX", 'X', MyItems.rfIngot});
-		GameRegistry.addRecipe(new ItemStack(MyItems.rfbeam), new Object[]{"X X","XXX","X X", 'X', MyItems.rfIngot});
-		GameRegistry.addRecipe(new ItemStack(MyItems.stbeam), new Object[]{"XXX"," X ","XXX", 'X', MyItems.stIngot});
 		GameRegistry.addRecipe(new ItemStack(MyItems.stbeam), new Object[]{"X X","XXX","X X", 'X', MyItems.stIngot});
 		GameRegistry.addRecipe(new ItemStack(MyItems.hstbeam), new Object[]{"XXX"," X ","XXX", 'X', MyItems.hstIngot});
-		GameRegistry.addRecipe(new ItemStack(MyItems.hstbeam), new Object[]{"X X","XXX","X X", 'X', MyItems.hstIngot});
 		GameRegistry.addRecipe(new ItemStack(MyItems.cstbeam), new Object[]{"XXX"," X ","XXX", 'X', MyItems.cstIngot});
-		GameRegistry.addRecipe(new ItemStack(MyItems.cstbeam), new Object[]{"X X","XXX","X X", 'X', MyItems.cstIngot});
 		GameRegistry.addRecipe(new ItemStack(MyItems.tbeam), new Object[]{"XXX"," X ","XXX", 'X', MyItems.tIngot});
-		GameRegistry.addRecipe(new ItemStack(MyItems.tbeam), new Object[]{"X X","XXX","X X", 'X', MyItems.tIngot});
 		
+		//Metal Blocks and ingots conversions
+		GameRegistry.addRecipe(new ItemStack(MyBlocks.rfBlock), new Object[]{"XXX","XXX","XXX",'X', MyItems.rfIngot});
+		GameRegistry.addRecipe(new ItemStack(MyBlocks.stBlock), new Object[]{"XXX","XXX","XXX", MyItems.stIngot});
+		GameRegistry.addRecipe(new ItemStack(MyBlocks.hstBlock), new Object[]{"XXX","XXX","XXX",'X', MyItems.hstIngot});
+		GameRegistry.addRecipe(new ItemStack(MyBlocks.cstBlock), new Object[]{"XXX","XXX","XXX",'X', MyItems.cstIngot});
+		GameRegistry.addRecipe(new ItemStack(MyBlocks.tBlock), new Object[]{"XXX","XXX","XXX",'X', MyItems.tIngot});
+		GameRegistry.addRecipe(new ItemStack(MyItems.rfIngot), new Object[]{"X",'X', MyBlocks.rfBlock});
+		GameRegistry.addRecipe(new ItemStack(MyItems.stIngot), new Object[]{"X",'X', MyBlocks.stBlock});
+		GameRegistry.addRecipe(new ItemStack(MyItems.hstIngot), new Object[]{"X",'X', MyBlocks.hstBlock});
+		GameRegistry.addRecipe(new ItemStack(MyItems.cstIngot), new Object[]{"X",'X', MyBlocks.cstBlock});
+		GameRegistry.addRecipe(new ItemStack(MyItems.tIngot), new Object[]{"X",'X', MyBlocks.tBlock});
+				
 	}
 	
 	public static void addSmeltingRecipe(){
@@ -50,6 +56,7 @@ public class CraftingManager {
 		GameRegistry.addSmelting(MyItems.tdust, new ItemStack(MyItems.tIngot), 0.0f);
 		GameRegistry.addSmelting(MyItems.idust, new ItemStack(Items.iron_ingot), 0.0f);
 		GameRegistry.addSmelting(MyItems.stIngot, new ItemStack(MyItems.stImpureIngot), 0.0f);
+		GameRegistry.addSmelting(MyItems.cstIngot, new ItemStack(MyItems.cstImpureIngot), 0.0f);
 		
 	}
 	
