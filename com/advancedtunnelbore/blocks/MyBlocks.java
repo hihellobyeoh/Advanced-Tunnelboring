@@ -16,13 +16,13 @@ public class MyBlocks {
 		registerItem();
 	}
 
-	public static Block comStone = new ComStone(Material.rock).setBlockName("comStone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":com_stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
-	public static Block tOre = new TOre(Material.rock).setBlockName("tOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":titanium_ore").setStepSound(Block.soundTypePiston).setHardness(3F);
-	public static Block rfBlock = new RfBlock(Material.iron).setBlockName("rfBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + "void").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block stBlock = new StBlock(Material.iron).setBlockName("stBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + "void").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block hstBlock = new HstBlock(Material.iron).setBlockName("hstBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + "void").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block cstBlock = new cstBlock(Material.iron).setBlockName("cstBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + "void").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block tBlock = new TBlock(Material.iron).setBlockName("tBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + "void").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block comStone = new ComStone(Material.rock).setBlockName("comStone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Compressed_Stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
+	public static Block tOre = new TOre(Material.rock).setBlockName("tOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Titanium_Ore").setStepSound(Block.soundTypePiston).setHardness(3F);
+	public static Block rfBlock = new RfBlock(Material.iron).setBlockName("rfBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Refined_Iron_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block stBlock = new StBlock(Material.iron).setBlockName("stBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block hstBlock = new HstBlock(Material.iron).setBlockName("hstBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Hardened_Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block cstBlock = new cstBlock(Material.iron).setBlockName("cstBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Carbon_Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block tBlock = new TBlock(Material.iron).setBlockName("tBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Titanium_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
 	
 	public static void initializeBlock(){
 		
