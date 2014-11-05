@@ -54,12 +54,12 @@ item.ilmenitedust.name=Ilmenite Dust
 item.tdust.name=Titanium Dust
 item.idust.name=Iron Dust
 
-item.iStick.name=Iron Stick
-item.rfStick.name=Refined Iron Stick
+item.iStick.name=Iron Shaft
+item.rfStick.name=Refined Iron shaft
 item.stStick.name=Steel Stick
-item.hstStick.name=Hardened Steel Stick
-item.cstStick.name=Carbon Steel Stick
-item.tStick.name=Titanium Stick
+item.hstStick.name=Hardened Steel Shaft
+item.cstStick.name=Carbon Steel Shaft
+item.tStick.name=Titanium Shaft
 
 tile.comStone.name=Compressed Stone
 tile.tOre.name=Ilmenite Ore

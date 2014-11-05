@@ -27,6 +27,7 @@ public class CraftingManager {
 		GameRegistry.addRecipe(new ItemStack(MyItems.hstwheel), new Object[]{"XIX","IXI","XIX",'X', MyItems.hstIngot, 'I', MyItems.hstStick});
 		GameRegistry.addRecipe(new ItemStack(MyItems.cstwheel), new Object[]{"XIX","IXI","XIX",'X', MyItems.cstIngot, 'I', MyItems.cstStick});
 		GameRegistry.addRecipe(new ItemStack(MyItems.twheel), new Object[]{"XIX","IXI","XIX",'X', MyItems.tIngot, 'I', MyItems.tStick});
+		
 		//Axles
 		GameRegistry.addRecipe(new ItemStack(MyItems.iaxle), new Object[]{"X","X",'X', MyItems.irod});
 		GameRegistry.addRecipe(new ItemStack(MyItems.rfaxle), new Object[]{"X","X",'X', MyItems.rfrod});
@@ -34,6 +35,7 @@ public class CraftingManager {
 		GameRegistry.addRecipe(new ItemStack(MyItems.hstaxle), new Object[]{"X","X",'X', MyItems.hstrod});
 		GameRegistry.addRecipe(new ItemStack(MyItems.cstaxle), new Object[]{"X","X",'X', MyItems.cstrod});
 		GameRegistry.addRecipe(new ItemStack(MyItems.taxle), new Object[]{"X","X",'X', MyItems.trod});
+		
 		//Gears
 		GameRegistry.addRecipe(new ItemStack(MyItems.igear), new Object[]{"XXX","XIX","XXX",'X', Items.iron_ingot, 'I', MyItems.iwheel});
 		GameRegistry.addRecipe(new ItemStack(MyItems.rfgear), new Object[]{"XXX","XIX","XXX",'X', MyItems.rfIngot, 'I', MyItems.rfwheel});
@@ -41,7 +43,14 @@ public class CraftingManager {
 		GameRegistry.addRecipe(new ItemStack(MyItems.hstgear), new Object[]{"XXX","XIX","XXX",'X', MyItems.hstIngot, 'I', MyItems.hstwheel});
 		GameRegistry.addRecipe(new ItemStack(MyItems.cstgear), new Object[]{"XXX","XIX","XXX",'X', MyItems.cstIngot, 'I', MyItems.cstwheel});
 		GameRegistry.addRecipe(new ItemStack(MyItems.tgear), new Object[]{"XXX","XIX","XXX",'X', MyItems.tIngot, 'I', MyItems.twheel});
+		
 		//Gearboxes
+		GameRegistry.addRecipe(new ItemStack(MyItems.igearbx), new Object[]{"XIX","ICI","XIX",'X', Items.iron_ingot, 'I', MyItems.igear, 'C', MyItems.iStick});
+		GameRegistry.addRecipe(new ItemStack(MyItems.rfgearbx), new Object[]{"XIX","ICI","XIX",'X', Items.iron_ingot, 'I', MyItems.rfgear, 'C', MyItems.rfStick});
+		GameRegistry.addRecipe(new ItemStack(MyItems.stgearbx), new Object[]{"XIX","ICI","XIX",'X', Items.iron_ingot, 'I', MyItems.stgear, 'C', MyItems.stStick});
+		GameRegistry.addRecipe(new ItemStack(MyItems.hstgearbx), new Object[]{"XIX","ICI","XIX",'X', Items.iron_ingot, 'I', MyItems.hstgear, 'C', MyItems.hstStick});
+		GameRegistry.addRecipe(new ItemStack(MyItems.cstgearbx), new Object[]{"XIX","ICI","XIX",'X', Items.iron_ingot, 'I', MyItems.cstgear, 'C', MyItems.cstStick});
+		GameRegistry.addRecipe(new ItemStack(MyItems.tgearbx), new Object[]{"XIX","ICI","XIX",'X', Items.iron_ingot, 'I', MyItems.tgear, 'C', MyItems.tStick});
 		
 		//Rods
 		GameRegistry.addRecipe(new ItemStack(MyItems.irod), new Object[]{"X  "," X ","  X",'X', Items.iron_ingot});
