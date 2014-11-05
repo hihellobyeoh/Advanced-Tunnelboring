@@ -3,17 +3,18 @@ package com.advancedtunnelbore.item;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
 
-
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class MyItems {
 
 	public static void mainRegistry(){
 		registerItem();
+		oreRegistration();
 	}
 	//Impure Ingots
 	public static Item stImpureIngot = new Item().setUnlocalizedName("stImpureIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Iron_Mixture");
@@ -163,5 +164,11 @@ public class MyItems {
 		GameRegistry.registerItem(tdust, tdust.getUnlocalizedName());
 		GameRegistry.registerItem(idust, idust.getUnlocalizedName());
 				
+	}
+	
+	public static void oreRegistration(){
+		OreDictionary.registerOre("dustCoal", coaldust);
+		OreDictionary.registerOre("dustIron", idust);
+		OreDictionary.registerOre("dustTitanium", tdust);
 	}
 }
