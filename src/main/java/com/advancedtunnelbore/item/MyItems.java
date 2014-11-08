@@ -21,7 +21,7 @@ public class MyItems {
 	public static Item cstImpureIngot = new Item().setUnlocalizedName("cstImpureIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Mixture");
 	
 	//Ingots
-	public static Item rfIngot = new Item().setUnlocalizedName("rfIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Ingot");
+	public static Item bzIngot = new Item().setUnlocalizedName("bzIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Ingot");
 	public static Item stIngot = new Item().setUnlocalizedName("stIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Ingot");
 	public static Item hstIngot = new Item().setUnlocalizedName("hstIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Ingot");
 	public static Item cstIngot = new Item().setUnlocalizedName("cstIngot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Ingot");
@@ -29,7 +29,7 @@ public class MyItems {
 	
 	//Wheels
 	public static Item iwheel = new Item().setUnlocalizedName("iwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Wheel");
-	public static Item rfwheel = new Item().setUnlocalizedName("rfwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Wheel");
+	public static Item bzwheel = new Item().setUnlocalizedName("bzwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Wheel");
 	public static Item stwheel = new Item().setUnlocalizedName("stwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Wheel");
 	public static Item hstwheel = new Item().setUnlocalizedName("hstwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Wheel");
 	public static Item cstwheel = new Item().setUnlocalizedName("cstwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Wheel");
@@ -37,7 +37,7 @@ public class MyItems {
 	
 	//Axles
 	public static Item iaxle = new Item().setUnlocalizedName("iaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Axle");
-	public static Item rfaxle = new Item().setUnlocalizedName("rfaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Axle");
+	public static Item bzaxle = new Item().setUnlocalizedName("bzaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Axle");
 	public static Item staxle = new Item().setUnlocalizedName("staxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Axle");
 	public static Item hstaxle = new Item().setUnlocalizedName("hstaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Axle");
 	public static Item cstaxle = new Item().setUnlocalizedName("cstaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Axle");
@@ -45,7 +45,7 @@ public class MyItems {
 	
 	//Gears
 	public static Item igear = new Item().setUnlocalizedName("igear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Gear");
-	public static Item rfgear = new Item().setUnlocalizedName("rfgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Gear");
+	public static Item bzgear = new Item().setUnlocalizedName("bzgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Gear");
 	public static Item stgear = new Item().setUnlocalizedName("stgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Gear");
 	public static Item hstgear = new Item().setUnlocalizedName("hstgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Gear");
 	public static Item cstgear = new Item().setUnlocalizedName("cstgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Gear");
@@ -53,7 +53,7 @@ public class MyItems {
 	
 	//Gearboxes
 	public static Item igearbx = new Item().setUnlocalizedName("igearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Gearbox");
-	public static Item rfgearbx = new Item().setUnlocalizedName("rfgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Gearbox");
+	public static Item bzgearbx = new Item().setUnlocalizedName("bzgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Gearbox");
 	public static Item stgearbx = new Item().setUnlocalizedName("stgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Gearbox");
 	public static Item hstgearbx = new Item().setUnlocalizedName("hstgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Gearbox");
 	public static Item cstgearbx = new Item().setUnlocalizedName("cstgearbx").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Gearbox");
@@ -61,7 +61,7 @@ public class MyItems {
 	
 	//Rods
 	public static Item irod = new Item().setUnlocalizedName("irod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Rod");
-	public static Item rfrod = new Item().setUnlocalizedName("rfrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Rod");
+	public static Item bzrod = new Item().setUnlocalizedName("bzrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Rod");
 	public static Item strod = new Item().setUnlocalizedName("strod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Rod");
 	public static Item hstrod = new Item().setUnlocalizedName("hstrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Rod");
 	public static Item cstrod = new Item().setUnlocalizedName("cstrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Rod");
@@ -69,7 +69,7 @@ public class MyItems {
 	
 	//Beams
 	public static Item ibeam = new Item().setUnlocalizedName("ibeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Beam");
-	public static Item rfbeam = new Item().setUnlocalizedName("rfbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Beam");
+	public static Item bzbeam = new Item().setUnlocalizedName("bzbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Beam");
 	public static Item stbeam = new Item().setUnlocalizedName("stbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Beam");
 	public static Item hstbeam = new Item().setUnlocalizedName("hstbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Beam");
 	public static Item cstbeam = new Item().setUnlocalizedName("cstbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Beam");
@@ -77,7 +77,7 @@ public class MyItems {
 	
 	//Sticks
 	public static Item iStick = new Item().setUnlocalizedName("iStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Stick");
-	public static Item rfStick = new Item().setUnlocalizedName("rfStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Refined_Iron_Stick");
+	public static Item bzStick = new Item().setUnlocalizedName("bzStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Stick");
 	public static Item stStick = new Item().setUnlocalizedName("stStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Stick");
 	public static Item hstStick = new Item().setUnlocalizedName("hstStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Stick");
 	public static Item cstStick = new Item().setUnlocalizedName("cstStick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Stick");
@@ -96,7 +96,7 @@ public class MyItems {
 		GameRegistry.registerItem(cstImpureIngot, cstImpureIngot.getUnlocalizedName());
 		
 		//Ingots
-		GameRegistry.registerItem(rfIngot, rfIngot.getUnlocalizedName());
+		GameRegistry.registerItem(bzIngot, bzIngot.getUnlocalizedName());
 		GameRegistry.registerItem(stIngot, stIngot.getUnlocalizedName());
 		GameRegistry.registerItem(hstIngot, hstIngot.getUnlocalizedName());
 		GameRegistry.registerItem(cstIngot, cstIngot.getUnlocalizedName());
@@ -104,7 +104,7 @@ public class MyItems {
 		
 		//Wheels
 		GameRegistry.registerItem(iwheel, iwheel.getUnlocalizedName());
-		GameRegistry.registerItem(rfwheel, rfwheel.getUnlocalizedName());
+		GameRegistry.registerItem(bzwheel, bzwheel.getUnlocalizedName());
 		GameRegistry.registerItem(stwheel, stwheel.getUnlocalizedName());
 		GameRegistry.registerItem(hstwheel, hstwheel.getUnlocalizedName());
 		GameRegistry.registerItem(cstwheel, cstwheel.getUnlocalizedName());
@@ -112,7 +112,7 @@ public class MyItems {
 		
 		//Axles
 		GameRegistry.registerItem(iaxle, iaxle.getUnlocalizedName());
-		GameRegistry.registerItem(rfaxle, rfaxle.getUnlocalizedName());
+		GameRegistry.registerItem(bzaxle, bzaxle.getUnlocalizedName());
 		GameRegistry.registerItem(staxle, staxle.getUnlocalizedName());
 		GameRegistry.registerItem(hstaxle, hstaxle.getUnlocalizedName());
 		GameRegistry.registerItem(cstaxle, cstaxle.getUnlocalizedName());
@@ -120,7 +120,7 @@ public class MyItems {
 		
 		//Gears
 		GameRegistry.registerItem(igear, igear.getUnlocalizedName());
-		GameRegistry.registerItem(rfgear, rfgear.getUnlocalizedName());
+		GameRegistry.registerItem(bzgear, bzgear.getUnlocalizedName());
 		GameRegistry.registerItem(stgear, stgear.getUnlocalizedName());
 		GameRegistry.registerItem(hstgear, hstgear.getUnlocalizedName());
 		GameRegistry.registerItem(cstgear, cstgear.getUnlocalizedName());
@@ -128,7 +128,7 @@ public class MyItems {
 		
 		//Gearboxes
 		GameRegistry.registerItem(igearbx, igearbx.getUnlocalizedName());
-		GameRegistry.registerItem(rfgearbx, rfgearbx.getUnlocalizedName());
+		GameRegistry.registerItem(bzgearbx, bzgearbx.getUnlocalizedName());
 		GameRegistry.registerItem(stgearbx, stgearbx.getUnlocalizedName());
 		GameRegistry.registerItem(hstgearbx, hstgearbx.getUnlocalizedName());
 		GameRegistry.registerItem(cstgearbx, cstgearbx.getUnlocalizedName());
@@ -136,7 +136,7 @@ public class MyItems {
 		
 		//Rods
 		GameRegistry.registerItem(irod, irod.getUnlocalizedName());
-		GameRegistry.registerItem(rfrod, rfrod.getUnlocalizedName());
+		GameRegistry.registerItem(bzrod, bzrod.getUnlocalizedName());
 		GameRegistry.registerItem(strod, strod.getUnlocalizedName());
 		GameRegistry.registerItem(hstrod, hstrod.getUnlocalizedName());
 		GameRegistry.registerItem(cstrod, cstrod.getUnlocalizedName());
@@ -144,7 +144,7 @@ public class MyItems {
 		
 		//Beams
 		GameRegistry.registerItem(ibeam, ibeam.getUnlocalizedName());
-		GameRegistry.registerItem(rfbeam, rfbeam.getUnlocalizedName());
+		GameRegistry.registerItem(bzbeam, bzbeam.getUnlocalizedName());
 		GameRegistry.registerItem(stbeam, stbeam.getUnlocalizedName());
 		GameRegistry.registerItem(hstbeam, hstbeam.getUnlocalizedName());
 		GameRegistry.registerItem(cstbeam, cstbeam.getUnlocalizedName());
@@ -152,7 +152,7 @@ public class MyItems {
 		
 		//Sticks
 		GameRegistry.registerItem(iStick, iStick.getUnlocalizedName());
-		GameRegistry.registerItem(rfStick, rfStick.getUnlocalizedName());
+		GameRegistry.registerItem(bzStick, bzStick.getUnlocalizedName());
 		GameRegistry.registerItem(stStick, stStick.getUnlocalizedName());
 		GameRegistry.registerItem(hstStick, hstStick.getUnlocalizedName());
 		GameRegistry.registerItem(cstStick, cstStick.getUnlocalizedName());
@@ -167,8 +167,17 @@ public class MyItems {
 	}
 	
 	public static void oreRegistration(){
+		
 		OreDictionary.registerOre("dustCoal", coaldust);
 		OreDictionary.registerOre("dustIron", idust);
 		OreDictionary.registerOre("dustTitanium", tdust);
+		OreDictionary.registerOre("dustIlmenite", ilmenitedust);
+		OreDictionary.registerOre("ingotBronze", bzIngot);
+		OreDictionary.registerOre("ingotSteel", stIngot);
+		OreDictionary.registerOre("ingotTitanium", tIngot);
+		OreDictionary.registerOre("ingotHardenedSteel", hstIngot);
+		OreDictionary.registerOre("ingotCarbonSteel", cstIngot);
+		OreDictionary.registerOre("dustIron", idust);
+				
 	}
 }

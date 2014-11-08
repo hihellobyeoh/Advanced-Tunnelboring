@@ -6,6 +6,7 @@ import com.advancedtunnelbore.lib.RefStrings;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -18,6 +19,10 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = RefStrings.MODID , name = RefStrings.NAME , version = RefStrings.VERSION)
 public class MainRegistry {
+	
+	@Instance(RefStrings.MODID)
+	public static MainRegistry modInstance;
+	
 	
 	public static CreativeTabs tabTunnelB = new CreativeTabs("tabTunnelBore") {
 	    @Override
@@ -35,6 +40,7 @@ public class MainRegistry {
 		MyBlocks.mainRegistry();
 		CraftingManager.mainRegistry();
 		proxy.registerRenderinfo();
+		proxy.registerTileEntities();
 	}
 	
 	@EventHandler

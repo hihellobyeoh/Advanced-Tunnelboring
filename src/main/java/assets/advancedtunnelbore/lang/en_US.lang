@@ -69,5 +69,7 @@ tile.hstBlock.name=Hardened Steel Block
 tile.cstBlock.name=Carbon Steel Block
 tile.tBlock.name=Titanium Block
 
+tile.BlastFurnace.name=Blast Furnace
+
 
 itemGroup.tabTunnelBore=Advanced Tunnel Boring
