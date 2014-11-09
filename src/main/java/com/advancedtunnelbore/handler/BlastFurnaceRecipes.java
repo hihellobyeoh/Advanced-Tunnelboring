@@ -26,7 +26,7 @@ public class BlastFurnaceRecipes {
 		//this.addRecipie(Item.getItemFromBlock(TMBlock.tutChest), new ItemStack(TMItem.tutHelmet), 0.8F);
 		this.addRecipie(MyItems.cstImpureIngot, new ItemStack(MyItems.cstIngot), 0.0F);
 	}
-	
+	//testing
 	public void addRecipie(Item item, ItemStack itemstack, float experience){
 		this.addLists(item, itemstack, experience);
 	}
