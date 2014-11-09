@@ -22,8 +22,9 @@ public class BlastFurnaceRecipes {
 	}
 	
 	private BlastFurnaceRecipes(){
-		this.addRecipie(MyItems.stImpureIngot, new ItemStack(MyItems.stIngot), 0.8F);
+		this.addRecipie(MyItems.stImpureIngot, new ItemStack(MyItems.stIngot), 0.0F);
 		//this.addRecipie(Item.getItemFromBlock(TMBlock.tutChest), new ItemStack(TMItem.tutHelmet), 0.8F);
+		this.addRecipie(MyItems.cstImpureIngot, new ItemStack(MyItems.cstIngot), 0.0F);
 	}
 	
 	public void addRecipie(Item item, ItemStack itemstack, float experience){
