@@ -1,5 +1,6 @@
 package com.advancedtunnelbore.inventory;
 
+import com.advancedtunnelbore.handler.BlastFurnaceRecipes;
 import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
 
 import cpw.mods.fml.relauncher.Side;
@@ -11,7 +12,7 @@ import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.SlotFurnace;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
+
 
 public class ContainerBlastFurnace extends Container {
 
@@ -94,7 +95,7 @@ public class ContainerBlastFurnace extends Container {
 				}
 				slot.onSlotChange(itemstack1, itemstack);
 			}else if(par2 != 1 && par2 != 0){
-				if(FurnaceRecipes.smelting().getSmeltingResult(itemstack1) != null){
+				if(BlastFurnaceRecipes.smelting().getSmeltingResult(itemstack1) != null){
 					if(!this.mergeItemStack(itemstack1, 0, 1, false)){
 						return null;
 					}

@@ -1,6 +1,7 @@
 package com.advancedtunnelbore.tile_entity;
 
 import com.advancedtunnelbore.blocks.BlastFurnace;
+import com.advancedtunnelbore.handler.BlastFurnaceRecipes;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -14,7 +15,6 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
@@ -216,7 +216,7 @@ public class TileEntityBlastFurnace extends TileEntity implements ISidedInventor
 		if(this.furnaceItemStacks[0] == null){
 			return false;
 		}else{
-			ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+			ItemStack itemstack = BlastFurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
 			if(itemstack == null) return false;
 			if(this.furnaceItemStacks[2] == null) return true;
 			if(!this.furnaceItemStacks[2].isItemEqual(itemstack)) return false;
@@ -227,7 +227,7 @@ public class TileEntityBlastFurnace extends TileEntity implements ISidedInventor
 	
 	public void smeltItem(){
 		if(this.canSmelt()){
-			ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+			ItemStack itemstack = BlastFurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
 			
 			if(this.furnaceItemStacks[2] == null){
 				this.furnaceItemStacks[2] = itemstack.copy();
@@ -237,8 +237,8 @@ public class TileEntityBlastFurnace extends TileEntity implements ISidedInventor
 			
 			--this.furnaceItemStacks[0].stackSize;
 			
-			if(this.furnaceItemStacks[0].stackSize >= 0){
-				this.furnaceItemStacks[0] = null;
+			if(this.furnaceItemStacks[0].stackSize == 0){  // If the ItemStack contains zero or more items
+				this.furnaceItemStacks[0] = null; // Set the ItemStack to null
 			}
 		}
 	}
