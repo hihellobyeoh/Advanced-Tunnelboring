@@ -32,7 +32,7 @@ public class MainRegistry {
 	    @Override
 	    @SideOnly(Side.CLIENT)
 	    public Item getTabIconItem() {
-	        return MyItems.iStick;
+	        return MyItems.ironStick;
 	    }
 	};
 	

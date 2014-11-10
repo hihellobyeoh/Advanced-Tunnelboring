@@ -7,6 +7,7 @@ import java.util.Map.Entry;
 
 import com.advancedtunnelbore.item.MyItems;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -22,11 +23,13 @@ public class BlastFurnaceRecipes {
 	}
 	
 	private BlastFurnaceRecipes(){
-		this.addRecipie(MyItems.stImpureIngot, new ItemStack(MyItems.stIngot), 0.0F);
+		this.addRecipie(Items.iron_ingot, new ItemStack(MyItems.steelIngot), 0.0F);
+		this.addRecipie(MyItems.steelIngot, new ItemStack(MyItems.carbonSteelIngot), 0.0F);
+		this.addRecipie(MyItems.titaniumDust, new ItemStack(MyItems.titaniumIngot), 0.0F);
 		//this.addRecipie(Item.getItemFromBlock(TMBlock.tutChest), new ItemStack(TMItem.tutHelmet), 0.8F);
-		this.addRecipie(MyItems.cstImpureIngot, new ItemStack(MyItems.cstIngot), 0.0F);
+		
 	}
-	//testing
+	
 	public void addRecipie(Item item, ItemStack itemstack, float experience){
 		this.addLists(item, itemstack, experience);
 	}
