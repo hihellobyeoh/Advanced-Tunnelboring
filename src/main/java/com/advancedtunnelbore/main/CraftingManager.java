@@ -67,11 +67,11 @@ public class CraftingManager {
 		
 		//Beams
 		GameRegistry.addRecipe(new ItemStack(MyItems.ironBeam), "XXX","XXX", 'X', Blocks.iron_block);
-		GameRegistry.addRecipe(new ItemStack(MyItems.bronzeBeam), "XXX","XXX", 'X', MyBlocks.bzBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.steelBeam), "XXX","XXX", 'X', MyBlocks.stBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.hardenedSteelBeam), "XXX","XXX", 'X', MyBlocks.hstBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.carbonSteelBeam), "XXX","XXX", 'X', MyBlocks.cstBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.titaniumBeam), "XXX","XXX", 'X', MyBlocks.tBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.bronzeBeam), "XXX","XXX", 'X', MyBlocks.bronzeBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.steelBeam), "XXX","XXX", 'X', MyBlocks.steelBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.hardenedSteelBeam), "XXX","XXX", 'X', MyBlocks.hardenedSteelBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.carbonSteelBeam), "XXX","XXX", 'X', MyBlocks.carbonSteelBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.titaniumBeam), "XXX","XXX", 'X', MyBlocks.titaniumBlock);
 				
 		//Sticks
 		GameRegistry.addRecipe(new ItemStack(MyItems.ironStick,2), "X","X",'X', Items.iron_ingot);
@@ -86,11 +86,11 @@ public class CraftingManager {
 		
 		
 		//Metal Blocks and ingots conversions
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.bzBlock, true, "FFF","FFF","FFF",'F', "ingotBronze"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.stBlock, true, "FFF","FFF","FFF",'F', "ingotSteel"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.hstBlock, true, "FFF","FFF","FFF",'F', "ingotHardenedSteel"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.cstBlock, true, "FFF","FFF","FFF",'F', "ingotCarbonSteel"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.tBlock, true, "FFF","FFF","FFF",'F', "ingotTitanium"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.bronzeBlock, true, "FFF","FFF","FFF",'F', "ingotBronze"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.steelBlock, true, "FFF","FFF","FFF",'F', "ingotSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.hardenedSteelBlock, true, "FFF","FFF","FFF",'F', "ingotHardenedSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.carbonSteelBlock, true, "FFF","FFF","FFF",'F', "ingotCarbonSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.titaniumBlock, true, "FFF","FFF","FFF",'F', "ingotTitanium"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MyItems.bronzeIngot, 9), true, "F",'F', "blockRefinedIron"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MyItems.steelIngot, 9), true, "F",'F', "blockSteel"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MyItems.hardenedSteelIngot, 9), true, "F",'F', "blockHardenedSteel"));

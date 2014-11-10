@@ -1,78 +1,75 @@
-item.stImpureIngot.name=Dirty Iron
-item.cstImpureIngot.name=Dirty Steel
+item.bronzeingot.name=Bronze Ingot
+item.steelingot.name=Steel Ingot
+item.hardenedsteelingot.name=Hardened Steel Ingot
+item.carbonsteelingot.name=Carbon Steel Ingot
+item.titaniumingot.name=Titanium Ingot
 
-item.rfIngot.name=Refined Iron Ingot
-item.bzIngot.name=Bronze Ingot
-item.stIngot.name=Steel Ingot
-item.hstIngot.name=Hardened Steel Ingot
-item.cstIngot.name=Carbon Steel Ingot
-item.tIngot.name=Titanium Ingot
+item.ironwheel.name=Iron Wheel
+item.bronzewheel.name=Bronze Wheel
+item.steelwheel.name=Steel Wheel
+item.hardenedsteelwheel.name=Hardened Steel Wheel
+item.carbonsteelwheel.name=Carbon Steel Wheel
+item.titaniumwheel.name=Titanium Wheel
 
-item.iwheel.name=Iron Wheel
-#item.rfwheel.name=Refined Iron Wheel
-item.bzwheel.name=Bronze Wheel
-item.stwheel.name=Steel Wheel
-item.hstwheel.name=Hardened Steel Wheel
-item.cstwheel.name=Carbon Steel Wheel
-item.twheel.name=Titanium Wheel
+item.ironaxle.name=Iron Axle
+item.bronzeaxle.name=Bronze Axle
+item.steelaxle.name=Steel Axle
+item.hardenedsteelaxle.name=Hardened Steel Axle
+item.carbonsteelaxle.name=Carbon Steel Axle
+item.titaniumaxle.name=Titanium Axle
 
-item.iaxle.name=Iron Axle
-item.rfaxle.name=Refined Iron Axle
-item.staxle.name=Steel Axle
-item.hstaxle.name=Hardened Steel Axle
-item.cstaxle.name=Carbon Steel Axle
-item.taxle.name=Titanium Axle
+item.irongear.name=Iron Gear
+item.bronzegear.name=Bronze Gear
+item.steelgear.name=Steel Gear
+item.hardenedsteelgear.name=Hardened Steel Gear
+item.carbonsteelgear.name=Carbon Steel Gear
+item.titaniumgear.name=Titanium Gear
 
-item.igear.name=Iron Gear
-item.rfgear.name=Refined Iron Gear
-item.stgear.name=Steel Gear
-item.hstgear.name=Hardened Steel Gear
-item.cstgear.name=Carbon Steel Gear
-item.tgear.name=Titanium Gear
+item.irongearbox.name=Iron Gearbox
+item.bronzegearbox.name=Bronze Gearbox
+item.steelgearbox.name=Steel Gearbox
+item.hardenedsteelgearbox.name=Hardened Steel Gearbox
+item.carbonsteelgearbox.name=Carbon Steel Gearbox
+item.titaniumgearbox.name=Titanium Gearbox
 
-item.igearbx.name=Iron Gearbox
-item.rfgearbx.name=Refined Iron Gearbox
-item.stgearbx.name=Steel Gearbox
-item.hstgearbx.name=Hardened Steel Gearbox
-item.cstgearbx.name=Carbon Steel Gearbox
-item.tgearbx.name=Titanium Gearbox
+item.ironrod.name=Iron Rod
+item.bronzerod.name=Bronze Rod
+item.steelrod.name=Steel Rod
+item.hardenedsteelrod.name=Hardened Steel Rod
+item.carbonsteelrod.name=Carbon Steel Rod
+item.titaniumrod.name=Titanium Rod
 
-item.irod.name=Iron Rod
-item.rfrod.name=Refined Iron Rod
-item.strod.name=Steel Rod
-item.hstrod.name=Hardened Steel Rod
-item.cstrod.name=Carbon Steel Rod
-item.trod.name=Titanium Rod
-
-item.ibeam.name=Iron Beam
-#item.rfbeam.name=Refined Iron Beam
-item.bzbeam.name=Bronze Beam
-item.stbeam.name=Steel Beam
-item.hstbeam.name=Hardened Steel Beam
-item.cstbeam.name=Carbon Steel Beam
-item.tbeam.name=Titanium Beam
+item.ironbeam.name=Iron Beam
+item.bronzebeam.name=Bronze Beam
+item.steelbeam.name=Steel Beam
+item.hardenedsteelbeam.name=Hardened Steel Beam
+item.carbonsteelbeam.name=Carbon Steel Beam
+item.titaniumbeam.name=Titanium Beam
 
 item.coaldust.name=Coal Dust
 item.ilmenitedust.name=Ilmenite Dust
-item.tdust.name=Titanium Dust
-item.idust.name=Iron Dust
+item.titaniumdust.name=Titanium Dust
+item.irondust.name=Iron Dust
+item.bronzedust.name=Bronze Dust
+item.tindust.name=Tin Dust
+item.copperdust.name=Copper Dust
 
-item.iStick.name=Iron Shaft
-item.rfStick.name=Refined Iron shaft
-item.stStick.name=Steel Stick
-item.hstStick.name=Hardened Steel Shaft
-item.cstStick.name=Carbon Steel Shaft
-item.tStick.name=Titanium Shaft
+item.ironstick.name=Iron Shaft
+item.bronzestick.name=Bronze Shaft
+item.steelstick.name=Steel Shaft
+item.hardenedsteelstick.name=Hardened Steel Shaft
+item.carbonsteelstick.name=Carbon Steel Shaft
+item.titaniumstick.name=Titanium Shaft
 
-tile.comStone.name=Compressed Stone
-tile.tOre.name=Ilmenite Ore
-tile.rfBlock.name=Refined Iron Block
-tile.stBlock.name=Steel Block
-tile.hstBlock.name=Hardened Steel Block
-tile.cstBlock.name=Carbon Steel Block
-tile.tBlock.name=Titanium Block
+tile.compressedstone.name=Compressed Stone
+tile.titaniumore.name=Ilmenite Ore
+tile.bronzeblock.name=Bronze Block
+tile.steelblock.name=Steel Block
+tile.hardenedsteelblock.name=Hardened Steel Block
+tile.carbonsteelblock.name=Carbon Steel Block
+tile.titaniumblock.name=Titanium Block
 
-tile.BlastFurnace.name=Blast Furnace
+tile.blastfurnace.name=Blast Furnace
 
 
 itemGroup.tabTunnelBore=Advanced Tunnel Boring

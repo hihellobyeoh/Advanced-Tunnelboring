@@ -15,63 +15,61 @@ public class MyBlocks {
 	
 	public static void mainRegistry(){
 		initializeBlock();
-		registerItem();
+		registerBlock();
 		registerOre();
 	}
 
-	public static Block comStone = new ComStone(Material.rock).setBlockName("comStone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Compressed_Stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
-	public static Block tOre = new TOre(Material.rock).setBlockName("tOre").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Titanium_Ore").setStepSound(Block.soundTypePiston).setHardness(3F);
-	public static Block bzBlock = new BzBlock(Material.iron).setBlockName("bzBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Bronze_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block stBlock = new StBlock(Material.iron).setBlockName("stBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block hstBlock = new HstBlock(Material.iron).setBlockName("hstBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Hardened_Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block cstBlock = new cstBlock(Material.iron).setBlockName("cstBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Carbon_Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
-	public static Block tBlock = new TBlock(Material.iron).setBlockName("tBlock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Titanium_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block compressedStone = new CompressedStone(Material.rock).setBlockName("compressedstone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Compressed_Stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
+	public static Block titaniumOre = new TitaniumOre(Material.rock).setBlockName("titaniumore").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Titanium_Ore").setStepSound(Block.soundTypePiston).setHardness(3F);
+	public static Block bronzeBlock = new BronzeBlock(Material.iron).setBlockName("bronzeblock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Bronze_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block steelBlock = new SteelBlock(Material.iron).setBlockName("steelblock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block hardenedSteelBlock = new HardenedSteelBlock(Material.iron).setBlockName("hardenedsteelblock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Hardened_Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block carbonSteelBlock = new CarbonSteelBlock(Material.iron).setBlockName("carbonsteelblock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Carbon_Steel_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
+	public static Block titaniumBlock = new TitaniumBlock(Material.iron).setBlockName("titaniumblock").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Titanium_Block").setStepSound(Block.soundTypeMetal).setHardness(1.5F);
 	
 	public static Block blastFurnace;
 	public static Block blastFurnaceActive;
 	
 	public static void initializeBlock(){
 		
-		tOre.setHarvestLevel("pickaxe", 3);
-		comStone.setHarvestLevel("pickaxe", 1);
-		bzBlock.setHarvestLevel("pickaxe", 1);
-		stBlock.setHarvestLevel("pickaxe", 2);
-		hstBlock.setHarvestLevel("pickaxe", 2);
-		cstBlock.setHarvestLevel("pickaxe", 2);
-		tBlock.setHarvestLevel("pickaxe", 2);
+		titaniumOre.setHarvestLevel("pickaxe", 3);
+		compressedStone.setHarvestLevel("pickaxe", 1);
+		bronzeBlock.setHarvestLevel("pickaxe", 1);
+		steelBlock.setHarvestLevel("pickaxe", 2);
+		hardenedSteelBlock.setHarvestLevel("pickaxe", 2);
+		carbonSteelBlock.setHarvestLevel("pickaxe", 2);
+		titaniumBlock.setHarvestLevel("pickaxe", 2);
 		
-		blastFurnace = new BlastFurnace(false).setBlockName("BlastFurnace").setCreativeTab(MainRegistry.tabTunnelB);
-		blastFurnaceActive = new BlastFurnace(true).setBlockName("BlastFurnaceActive");
+		blastFurnace = new BlastFurnace(false).setBlockName("blastfurnace").setCreativeTab(MainRegistry.tabTunnelB);
+		blastFurnaceActive = new BlastFurnace(true).setBlockName("blastfurnaceactive");
 		
 		
 	}
 	
 	
-	public static void registerItem(){
+	public static void registerBlock(){
 		
-		GameRegistry.registerBlock(comStone, comStone.getUnlocalizedName());
-		GameRegistry.registerBlock(tOre, tOre.getUnlocalizedName());
-		GameRegistry.registerBlock(bzBlock, bzBlock.getUnlocalizedName());
-		GameRegistry.registerBlock(stBlock, stBlock.getUnlocalizedName());
-		GameRegistry.registerBlock(hstBlock, hstBlock.getUnlocalizedName());
-		GameRegistry.registerBlock(cstBlock, cstBlock.getUnlocalizedName());
-		GameRegistry.registerBlock(tBlock, tBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(compressedStone, compressedStone.getUnlocalizedName());
+		GameRegistry.registerBlock(titaniumOre, titaniumOre.getUnlocalizedName());
+		GameRegistry.registerBlock(bronzeBlock, bronzeBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(steelBlock, steelBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(hardenedSteelBlock, hardenedSteelBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(carbonSteelBlock, carbonSteelBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getUnlocalizedName());
 		GameRegistry.registerBlock(blastFurnace, blastFurnace.getUnlocalizedName());
-		GameRegistry.registerBlock(blastFurnaceActive, blastFurnaceActive.getUnlocalizedName());
+		//GameRegistry.registerBlock(blastFurnaceActive, blastFurnaceActive.getUnlocalizedName());
 				
 	}
 	
 	public static void registerOre(){
 		
-		OreDictionary.registerOre("blockBronze", bzBlock);
-		OreDictionary.registerOre("blockSteel", stBlock);
-		OreDictionary.registerOre("blockHardenedSteel", hstBlock);
-		OreDictionary.registerOre("blockCarbonSteel", cstBlock);
-		OreDictionary.registerOre("blockTitanium", tBlock);
-		OreDictionary.registerOre("blockCompressedStone", comStone);
-		OreDictionary.registerOre("oreIlmenite", tOre);
+		OreDictionary.registerOre("blockBronze", bronzeBlock);
+		OreDictionary.registerOre("blockSteel", steelBlock);
+		OreDictionary.registerOre("blockHardenedSteel", steelBlock);
+		OreDictionary.registerOre("blockCarbonSteel", carbonSteelBlock);
+		OreDictionary.registerOre("blockTitanium", titaniumBlock);
+		OreDictionary.registerOre("blockCompressedStone", compressedStone);
+		OreDictionary.registerOre("oreIlmenite", titaniumOre);
 		
 	}
 }
-
-

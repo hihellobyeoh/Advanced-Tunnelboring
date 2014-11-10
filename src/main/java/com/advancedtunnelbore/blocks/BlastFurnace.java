@@ -51,6 +51,8 @@ public class BlastFurnace extends BlockContainer {
 			return top;
 		}else if(side == 3){
 			return front;
+		}else if(side == 0){
+			return top;
 		}else{
 			return this.blockIcon;
 		}
