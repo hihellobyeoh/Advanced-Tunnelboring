@@ -41,7 +41,7 @@ public class BlastFurnace extends BlockContainer {
 
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconregister){
-		this.blockIcon = iconregister.registerIcon(RefStrings.MODID + ":BlastFurnaceSide");
+		this.blockIcon = iconregister.registerIcon(this.isBurning ? RefStrings.MODID + ":BlastFurnaceSideActive" : RefStrings.MODID + ":BlastFurnaceSideInactive" );
 		this.front = iconregister.registerIcon(this.isBurning ? RefStrings.MODID + ":BlastFurnaceActive" : RefStrings.MODID + ":BlastFurnaceInactive" );
 		this.top = iconregister.registerIcon(RefStrings.MODID + ":BlastFurnaceTop");
 	}
