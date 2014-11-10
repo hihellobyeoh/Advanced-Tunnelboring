@@ -79,14 +79,14 @@ public class MyItems {
 	public static Item carbonSteelStick = new Item().setUnlocalizedName("carbonsteelstick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Stick");
 	public static Item titaniumStick = new Item().setUnlocalizedName("titaniumstick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Stick");
 	
-	//Dusts
+	//Dusts -- Done Nats
 	public static Item coalDust = new Item().setUnlocalizedName("coaldust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Coal_Dust");
 	public static Item ilmeniteDust = new Item().setUnlocalizedName("ilmenitedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Ilmenite_Dust");
 	public static Item titaniumDust = new Item().setUnlocalizedName("titaniumdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Dust");
 	public static Item ironDust = new Item().setUnlocalizedName("irondust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Dust");
-	public static Item bronzeDust = new Item().setUnlocalizedName("bronzedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Dust");
-	public static Item copperDust = new Item().setUnlocalizedName("copperdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Dust");
-	public static Item tinDust = new Item().setUnlocalizedName("tindust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Dust");
+	public static Item bronzeDust = new Item().setUnlocalizedName("bronzedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Dust");
+	public static Item copperDust = new Item().setUnlocalizedName("copperdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Copper_Dust");
+	public static Item tinDust = new Item().setUnlocalizedName("tindust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Tin_Dust");
 	
 	public static void registerItem(){
 		
