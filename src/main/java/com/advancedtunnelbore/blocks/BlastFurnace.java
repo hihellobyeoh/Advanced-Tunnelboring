@@ -49,7 +49,7 @@ public class BlastFurnace extends BlockContainer {
 	public IIcon getIcon(int side, int meta){
 		if(side == 1){
 			return top;
-		}else if(side == 3){
+		}else if(side == 5){
 			return front;
 		}else if(side == 0){
 			return top;
