@@ -2,13 +2,15 @@ item.stImpureIngot.name=Dirty Iron
 item.cstImpureIngot.name=Dirty Steel
 
 item.rfIngot.name=Refined Iron Ingot
+item.bzIngot.name=Bronze Ingot
 item.stIngot.name=Steel Ingot
 item.hstIngot.name=Hardened Steel Ingot
 item.cstIngot.name=Carbon Steel Ingot
 item.tIngot.name=Titanium Ingot
 
 item.iwheel.name=Iron Wheel
-item.rfwheel.name=Refined Iron Wheel
+#item.rfwheel.name=Refined Iron Wheel
+item.bzwheel.name=Bronze Wheel
 item.stwheel.name=Steel Wheel
 item.hstwheel.name=Hardened Steel Wheel
 item.cstwheel.name=Carbon Steel Wheel
@@ -43,7 +45,8 @@ item.cstrod.name=Carbon Steel Rod
 item.trod.name=Titanium Rod
 
 item.ibeam.name=Iron Beam
-item.rfbeam.name=Refined Iron Beam
+#item.rfbeam.name=Refined Iron Beam
+item.bzbeam.name=Bronze Beam
 item.stbeam.name=Steel Beam
 item.hstbeam.name=Hardened Steel Beam
 item.cstbeam.name=Carbon Steel Beam
