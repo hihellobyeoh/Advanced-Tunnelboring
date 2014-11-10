@@ -57,6 +57,8 @@ public class MyBlocks {
 		GameRegistry.registerBlock(carbonSteelBlock, carbonSteelBlock.getUnlocalizedName());
 		GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getUnlocalizedName());
 		GameRegistry.registerBlock(blastFurnace, blastFurnace.getUnlocalizedName());
+		GameRegistry.registerBlock(blastFurnaceActive, blastFurnaceActive.getUnlocalizedName());
+		
 				
 	}
 	
