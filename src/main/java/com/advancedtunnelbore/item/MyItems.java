@@ -16,14 +16,14 @@ public class MyItems {
 		oreRegistration();
 	}
 	
-	//Ingots--textures done
+	//Ingots -- Done Nats
 	public static Item bronzeIngot = new Item().setUnlocalizedName("bronzeingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Ingot");
 	public static Item steelIngot = new Item().setUnlocalizedName("steelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Ingot");
 	public static Item hardenedSteelIngot = new Item().setUnlocalizedName("hardenedsteelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Ingot");
 	public static Item carbonSteelIngot = new Item().setUnlocalizedName("carbonsteelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Ingot");
 	public static Item titaniumIngot = new Item().setUnlocalizedName("titaniumingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Ingot");
 	
-	//Wheels--textures done
+	//Wheels -- Done Nats
 	public static Item ironWheel = new Item().setUnlocalizedName("ironwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Wheel");
 	public static Item bronzeWheel = new Item().setUnlocalizedName("bronzewheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Wheel");
 	public static Item steelWheel = new Item().setUnlocalizedName("steelwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Wheel");
@@ -31,7 +31,7 @@ public class MyItems {
 	public static Item carbonSteelWheel = new Item().setUnlocalizedName("carbonsteelwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Wheel");
 	public static Item titaniumWheel = new Item().setUnlocalizedName("titaniumwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Wheel");
 	
-	//Axles
+	//Axles - Done Nats
 	public static Item ironAxle = new Item().setUnlocalizedName("ironaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Axle");
 	public static Item bronzeAxle = new Item().setUnlocalizedName("bronzeaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Axle");
 	public static Item steelAxle = new Item().setUnlocalizedName("steelaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Axle");
@@ -39,7 +39,7 @@ public class MyItems {
 	public static Item carbonSteelAxle = new Item().setUnlocalizedName("carbonsteelaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Axle");
 	public static Item titaniumAxle = new Item().setUnlocalizedName("titaniumaxle").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Axle");
 	
-	//Gears--Iron Gear is Done others need to be made
+	//Gears -- Done Nats
 	public static Item ironGear = new Item().setUnlocalizedName("irongear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Gear");
 	public static Item bronzeGear = new Item().setUnlocalizedName("bronzegear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Gear");
 	public static Item steelGear = new Item().setUnlocalizedName("steelgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Gear");
@@ -47,7 +47,7 @@ public class MyItems {
 	public static Item carbonSteelGear = new Item().setUnlocalizedName("carbonsteelgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Gear");
 	public static Item titaniumGear = new Item().setUnlocalizedName("titaniumgear").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Gear");
 	
-	//Gearboxes
+	//Gearboxes -- Done Nats
 	public static Item ironGearBox = new Item().setUnlocalizedName("irongearbox").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Gearbox");
 	public static Item bronzeGearBox = new Item().setUnlocalizedName("bronzegearbox").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Gearbox");
 	public static Item steelGearBox = new Item().setUnlocalizedName("steelgearbox").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Gearbox");
@@ -55,7 +55,7 @@ public class MyItems {
 	public static Item carbonSteelGearBox = new Item().setUnlocalizedName("carbonsteelgearbox").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Gearbox");
 	public static Item titaniumGearBox = new Item().setUnlocalizedName("titaniumgearbox").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Gearbox");
 	
-	//Rods
+	//Rods -- Done Nats
 	public static Item ironRod = new Item().setUnlocalizedName("ironrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Rod");
 	public static Item bronzeRod = new Item().setUnlocalizedName("bronzerod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Rod");
 	public static Item steelRod = new Item().setUnlocalizedName("steelrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Rod");
@@ -63,7 +63,7 @@ public class MyItems {
 	public static Item carbonSteelRod = new Item().setUnlocalizedName("carbonsteelrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Rod");
 	public static Item titaniumRod = new Item().setUnlocalizedName("titaniumrod").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Rod");
 	
-	//Beams--textures done
+	//Beams -- Done Nats
 	public static Item ironBeam = new Item().setUnlocalizedName("ironbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Beam");
 	public static Item bronzeBeam = new Item().setUnlocalizedName("bronzebeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Beam");
 	public static Item steelBeam = new Item().setUnlocalizedName("steelbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Beam");
@@ -71,7 +71,7 @@ public class MyItems {
 	public static Item carbonSteelBeam = new Item().setUnlocalizedName("carbonsteelbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Beam");
 	public static Item titaniumBeam = new Item().setUnlocalizedName("titaniumbeam").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Beam");
 	
-	//Sticks--Iron Stick is done, others need to be made
+	//Sticks -- Done Nats
 	public static Item ironStick = new Item().setUnlocalizedName("ironstick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Stick");
 	public static Item bronzeStick = new Item().setUnlocalizedName("bronzestick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Stick");
 	public static Item steelStick = new Item().setUnlocalizedName("steelstick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Stick");
