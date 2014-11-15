@@ -1,4 +1,4 @@
-package com.advancedtunnelbore.blocks;
+package com.advancedtunnelbore.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

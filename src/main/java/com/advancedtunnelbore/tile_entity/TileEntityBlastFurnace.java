@@ -1,6 +1,6 @@
 package com.advancedtunnelbore.tile_entity;
 
-import com.advancedtunnelbore.blocks.BlastFurnace;
+import com.advancedtunnelbore.block.BlastFurnace;
 import com.advancedtunnelbore.handler.BlastFurnaceRecipes;
 
 import cpw.mods.fml.common.registry.GameRegistry;

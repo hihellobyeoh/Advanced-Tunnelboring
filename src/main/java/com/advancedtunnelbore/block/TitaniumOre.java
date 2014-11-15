@@ -1,4 +1,4 @@
-package com.advancedtunnelbore.blocks;
+package com.advancedtunnelbore.block;
 
 import java.util.Random;
 
@@ -10,8 +10,8 @@ public class TitaniumOre extends Block {
 
 	protected TitaniumOre(Material p_i45394_1_) {
 		super(p_i45394_1_);
-	
 	}
+	
 	@Override
     public Item getItemDropped(int metadata, Random random, int fortune) {
         return Item.getItemFromBlock(MyBlocks.titaniumOre);

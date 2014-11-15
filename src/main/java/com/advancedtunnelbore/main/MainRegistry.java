@@ -1,6 +1,6 @@
 package com.advancedtunnelbore.main;
 
-import com.advancedtunnelbore.blocks.MyBlocks;
+import com.advancedtunnelbore.block.MyBlocks;
 import com.advancedtunnelbore.handler.MyGuiHandler;
 import com.advancedtunnelbore.item.MyItems;
 import com.advancedtunnelbore.lib.RefStrings;

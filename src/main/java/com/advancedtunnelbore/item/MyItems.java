@@ -22,6 +22,8 @@ public class MyItems {
 	public static Item hardenedSteelIngot = new Item().setUnlocalizedName("hardenedsteelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Ingot");
 	public static Item carbonSteelIngot = new Item().setUnlocalizedName("carbonsteelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Ingot");
 	public static Item titaniumIngot = new Item().setUnlocalizedName("titaniumingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Ingot");
+	public static Item tinIngot = new Item().setUnlocalizedName("tiningot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Tin_Ingot");
+	public static Item copperIngot = new Item().setUnlocalizedName("copperingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Copper_Ingot");
 	
 	//Wheels -- Done Nats
 	public static Item ironWheel = new Item().setUnlocalizedName("ironwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Wheel");
@@ -96,6 +98,8 @@ public class MyItems {
 		GameRegistry.registerItem(hardenedSteelIngot, hardenedSteelIngot.getUnlocalizedName());
 		GameRegistry.registerItem(carbonSteelIngot, carbonSteelIngot.getUnlocalizedName());
 		GameRegistry.registerItem(titaniumIngot, titaniumIngot.getUnlocalizedName());
+		GameRegistry.registerItem(tinIngot, tinIngot.getUnlocalizedName());
+		GameRegistry.registerItem(copperIngot, copperIngot.getUnlocalizedName());
 		
 		//Wheels
 		GameRegistry.registerItem(ironWheel, ironWheel.getUnlocalizedName());
@@ -166,15 +170,36 @@ public class MyItems {
 	
 	public static void oreRegistration(){
 		
-		OreDictionary.registerOre("dustCoal", coalDust);
-		OreDictionary.registerOre("dustIron", ironDust);
-		OreDictionary.registerOre("dustTitanium", titaniumDust);
-		OreDictionary.registerOre("dustIlmenite", ilmeniteDust);
+		//Ingots
+		OreDictionary.registerOre("ingotTin", tinIngot);
+		OreDictionary.registerOre("ingotCopper", copperIngot);
 		OreDictionary.registerOre("ingotBronze", bronzeIngot);
 		OreDictionary.registerOre("ingotSteel", steelIngot);
 		OreDictionary.registerOre("ingotTitanium", titaniumIngot);
 		OreDictionary.registerOre("ingotHardenedSteel", hardenedSteelIngot);
 		OreDictionary.registerOre("ingotCarbonSteel", carbonSteelIngot);
+		
+		//Gears
+		OreDictionary.registerOre("gearBronze", bronzeGear);
+		OreDictionary.registerOre("gearIron", ironGear);
+		OreDictionary.registerOre("gearSteel", steelGear);
+		OreDictionary.registerOre("gearHardenedSteel", hardenedSteelGear);
+		OreDictionary.registerOre("gearCarbonSteel", carbonSteelGear);
+		OreDictionary.registerOre("gearTitanium", titaniumGear);
+		
+		
+		//Sticks\Shafts
+		OreDictionary.registerOre("stickIron", ironStick);
+		
+		//Dusts
+		OreDictionary.registerOre("dustCoal", coalDust);
+		OreDictionary.registerOre("dustIron", ironDust);
+		OreDictionary.registerOre("dustTitanium", titaniumDust);
+		OreDictionary.registerOre("dustIlmenite", ilmeniteDust);
+		OreDictionary.registerOre("dustTin", tinDust);
+		OreDictionary.registerOre("dustCopper", copperDust);
+		OreDictionary.registerOre("dustBronze", bronzeDust);
+		
 		
 				
 	}
