@@ -3,6 +3,8 @@ item.steelingot.name=Steel Ingot
 item.hardenedsteelingot.name=Hardened Steel Ingot
 item.carbonsteelingot.name=Carbon Steel Ingot
 item.titaniumingot.name=Titanium Ingot
+item.tiningot.name=Tin Ingot
+item.copperingot.name=Copper Ingot
 
 item.ironwheel.name=Iron Wheel
 item.bronzewheel.name=Bronze Wheel
@@ -68,6 +70,10 @@ tile.steelblock.name=Steel Block
 tile.hardenedsteelblock.name=Hardened Steel Block
 tile.carbonsteelblock.name=Carbon Steel Block
 tile.titaniumblock.name=Titanium Block
+tile.tinblock.name=Tin Block
+tile.copperblock.name=Copper Block
+tile.tinore.name=Tin Ore
+tile.copperore.name=Copper Ore
 
 tile.blastfurnace.name=Blast Furnace
 
