@@ -17,13 +17,13 @@ public class MyItems {
 	}
 	
 	//Ingots -- Done Nats
+	public static Item copperIngot = new Item().setUnlocalizedName("copperingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Copper_Ingot");
+	public static Item tinIngot = new Item().setUnlocalizedName("tiningot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Tin_Ingot");
 	public static Item bronzeIngot = new Item().setUnlocalizedName("bronzeingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Ingot");
 	public static Item steelIngot = new Item().setUnlocalizedName("steelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Steel_Ingot");
 	public static Item hardenedSteelIngot = new Item().setUnlocalizedName("hardenedsteelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Hardened_Steel_Ingot");
 	public static Item carbonSteelIngot = new Item().setUnlocalizedName("carbonsteelingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Carbon_Steel_Ingot");
 	public static Item titaniumIngot = new Item().setUnlocalizedName("titaniumingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Ingot");
-	public static Item tinIngot = new Item().setUnlocalizedName("tiningot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Tin_Ingot");
-	public static Item copperIngot = new Item().setUnlocalizedName("copperingot").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Copper_Ingot");
 	
 	//Wheels -- Done Nats
 	public static Item ironWheel = new Item().setUnlocalizedName("ironwheel").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Wheel");
@@ -82,24 +82,27 @@ public class MyItems {
 	public static Item titaniumStick = new Item().setUnlocalizedName("titaniumstick").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Stick");
 	
 	//Dusts -- Done Nats
-	public static Item coalDust = new Item().setUnlocalizedName("coaldust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Coal_Dust");
-	public static Item ilmeniteDust = new Item().setUnlocalizedName("ilmenitedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Ilmenite_Dust");
-	public static Item titaniumDust = new Item().setUnlocalizedName("titaniumdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Dust");
-	public static Item ironDust = new Item().setUnlocalizedName("irondust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Dust");
-	public static Item bronzeDust = new Item().setUnlocalizedName("bronzedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Dust");
 	public static Item copperDust = new Item().setUnlocalizedName("copperdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Copper_Dust");
 	public static Item tinDust = new Item().setUnlocalizedName("tindust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Tin_Dust");
+	public static Item bronzeDust = new Item().setUnlocalizedName("bronzedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Bronze_Dust");
+	public static Item ironDust = new Item().setUnlocalizedName("irondust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Iron_Dust");
+	public static Item titaniumDust = new Item().setUnlocalizedName("titaniumdust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Titanium_Dust");
+	public static Item ilmeniteDust = new Item().setUnlocalizedName("ilmenitedust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Ilmenite_Dust");
+	public static Item coalDust = new Item().setUnlocalizedName("coaldust").setCreativeTab(MainRegistry.tabTunnelB).setMaxStackSize(64).setTextureName(RefStrings.MODID + ":Coal_Dust");
+	
 	
 	public static void registerItem(){
 		
 		//Ingots
+		GameRegistry.registerItem(copperIngot, copperIngot.getUnlocalizedName());
+		GameRegistry.registerItem(tinIngot, tinIngot.getUnlocalizedName());
 		GameRegistry.registerItem(bronzeIngot, bronzeIngot.getUnlocalizedName());
 		GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName());
 		GameRegistry.registerItem(hardenedSteelIngot, hardenedSteelIngot.getUnlocalizedName());
 		GameRegistry.registerItem(carbonSteelIngot, carbonSteelIngot.getUnlocalizedName());
 		GameRegistry.registerItem(titaniumIngot, titaniumIngot.getUnlocalizedName());
-		GameRegistry.registerItem(tinIngot, tinIngot.getUnlocalizedName());
-		GameRegistry.registerItem(copperIngot, copperIngot.getUnlocalizedName());
+		
+		
 		
 		//Wheels
 		GameRegistry.registerItem(ironWheel, ironWheel.getUnlocalizedName());
@@ -158,13 +161,13 @@ public class MyItems {
 		GameRegistry.registerItem(titaniumStick, titaniumStick.getUnlocalizedName());
 		
 		//Dusts
-		GameRegistry.registerItem(coalDust, coalDust.getUnlocalizedName());
-		GameRegistry.registerItem(ilmeniteDust, ilmeniteDust.getUnlocalizedName());
-		GameRegistry.registerItem(titaniumDust, titaniumDust.getUnlocalizedName());
-		GameRegistry.registerItem(ironDust, ironDust.getUnlocalizedName());
 		GameRegistry.registerItem(copperDust, copperDust.getUnlocalizedName());
 		GameRegistry.registerItem(tinDust, tinDust.getUnlocalizedName());
 		GameRegistry.registerItem(bronzeDust, bronzeDust.getUnlocalizedName());
+		GameRegistry.registerItem(ironDust, ironDust.getUnlocalizedName());
+		GameRegistry.registerItem(titaniumDust, titaniumDust.getUnlocalizedName());
+		GameRegistry.registerItem(ilmeniteDust, ilmeniteDust.getUnlocalizedName());
+		GameRegistry.registerItem(coalDust, coalDust.getUnlocalizedName());
 				
 	}
 	
