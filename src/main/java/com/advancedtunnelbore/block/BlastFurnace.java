@@ -41,8 +41,8 @@ public class BlastFurnace extends BlockContainer {
 
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconregister){
-		this.blockIcon = iconregister.registerIcon(this.isBurning ? RefStrings.MODID + ":BlastFurnaceSideActive" : RefStrings.MODID + ":BlastFurnaceSideInactive" );
-		this.front = iconregister.registerIcon(this.isBurning ? RefStrings.MODID + ":BlastFurnaceActive" : RefStrings.MODID + ":BlastFurnaceInactive" );
+		this.blockIcon = iconregister.registerIcon(this.isBurning2 ? RefStrings.MODID + ":BlastFurnaceSideActive" : RefStrings.MODID + ":BlastFurnaceSideInactive" );
+		this.front = iconregister.registerIcon(this.isBurning2 ? RefStrings.MODID + ":BlastFurnaceActive" : RefStrings.MODID + ":BlastFurnaceInactive" );
 		this.top = iconregister.registerIcon(RefStrings.MODID + ":BlastFurnaceTop");
 	}
 	
@@ -85,16 +85,16 @@ public class BlastFurnace extends BlockContainer {
 			Block direction3 = world.getBlock(x + 1,  y,  z);
 			byte byte0 = 3;
 			
-			if(direction.func_149730_j() && direction.func_149730_j()){
+			if(direction.func_149730_j() && !direction1.func_149730_j()){
 				byte0 = 3;
 			}
-			if(direction1.func_149730_j() && direction1.func_149730_j()){
+			if(direction1.func_149730_j() && !direction.func_149730_j()){
 				byte0 = 2;
 			}
-			if(direction2.func_149730_j() && direction2.func_149730_j()){
+			if(direction2.func_149730_j() && !direction3.func_149730_j()){
 				byte0 = 5;
 			}
-			if(direction3.func_149730_j() && direction3.func_149730_j()){
+			if(direction3.func_149730_j() && !direction2.func_149730_j()){
 				byte0 = 4;
 			}
 			
@@ -150,9 +150,9 @@ public class BlastFurnace extends BlockContainer {
 					ItemStack itemstack = tileentityblastfurnace.getStackInSlot(i);
 					
 					if(itemstack != null){
-						float f = this.random.nextFloat() * 0.6F + 0.1F;
-						float f1 = this.random.nextFloat() * 0.6F + 0.1F;
-						float f2 = this.random.nextFloat() * 0.6F + 0.1F;
+						float f = this.random.nextFloat() * 0.8F + 0.1F;
+						float f1 = this.random.nextFloat() * 0.8F + 0.1F;
+						float f2 = this.random.nextFloat() * 0.8F + 0.1F;
 						
 						while(itemstack.stackSize > 0){
 							int j = this.random.nextInt(21) + 10;
@@ -169,10 +169,10 @@ public class BlastFurnace extends BlockContainer {
 								entityitem.getEntityItem().setTagCompound(((NBTTagCompound) itemstack.getTagCompound().copy()));
 							}
 						
-							float f3 = 0.025F;
+							float f3 = 0.05F;
 							entityitem.motionX = (double) ((float) this.random.nextGaussian() * f3);
-							entityitem.motionX = (double) ((float) this.random.nextGaussian() * f3 + 0.1F);
-							entityitem.motionX = (double) ((float) this.random.nextGaussian() * f3);
+							entityitem.motionY = (double) ((float) this.random.nextGaussian() * f3 + 0.2F);
+							entityitem.motionZ = (double) ((float) this.random.nextGaussian() * f3);
 							world.spawnEntityInWorld(entityitem);
 						}
 					}

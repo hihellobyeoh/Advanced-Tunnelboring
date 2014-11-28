@@ -48,8 +48,8 @@ public class MyBlocks {
 		carbonSteelBlock.setHarvestLevel("pickaxe", 2);
 		titaniumBlock.setHarvestLevel("pickaxe", 2);
 		
-		blastFurnace = new BlastFurnace(false).setBlockName("blastfurnace").setCreativeTab(MainRegistry.tabTunnelB);
-		blastFurnaceActive = new BlastFurnace(true).setBlockName("blastfurnaceactive");
+		blastFurnace = new BlastFurnace2(false).setBlockName("blastfurnace").setCreativeTab(MainRegistry.tabTunnelB);
+		blastFurnaceActive = new BlastFurnace2(true).setBlockName("blastfurnaceactive");
 		
 		
 	}
