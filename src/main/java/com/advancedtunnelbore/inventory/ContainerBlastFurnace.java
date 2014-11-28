@@ -2,6 +2,7 @@ package com.advancedtunnelbore.inventory;
 
 import com.advancedtunnelbore.handler.BlastFurnaceRecipes;
 import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
+import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -21,11 +22,11 @@ public class ContainerBlastFurnace extends Container {
 	private int lastBurnTime;
 	private int lastItemBurnTime;
 	
-	public ContainerBlastFurnace(InventoryPlayer player, TileEntityBlastFurnace tileEntityFurnace){
-		this.tileFurnace = tileEntityFurnace;
-		this.addSlotToContainer(new Slot(tileEntityFurnace, 0, 56, 17));
-		this.addSlotToContainer(new Slot(tileEntityFurnace, 1, 56, 53));
-		this.addSlotToContainer(new SlotFurnace(player.player, tileEntityFurnace, 2,116,35));
+	public ContainerBlastFurnace(InventoryPlayer player, TileEntityBlastFurnace tileEntityTestContainer){
+		this.tileFurnace = tileEntityTestContainer;
+		this.addSlotToContainer(new Slot(tileEntityTestContainer, 0, 56, 17));
+		this.addSlotToContainer(new Slot(tileEntityTestContainer, 1, 56, 53));
+		this.addSlotToContainer(new SlotFurnace(player.player, tileEntityTestContainer, 2,116,35));
 		int i;
 		
 		for(int i1 = 0; i1 < 3; ++i1){

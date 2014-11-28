@@ -4,6 +4,7 @@ import org.lwjgl.opengl.GL11;
 
 import com.advancedtunnelbore.inventory.ContainerBlastFurnace;
 import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
+import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -21,9 +22,9 @@ public class GuiBlastFurnace extends GuiContainer {
 	private TileEntityBlastFurnace tileFurnace;
 	
 	
-	public GuiBlastFurnace(InventoryPlayer invPlayer, TileEntityBlastFurnace tile) {
-		super(new ContainerBlastFurnace(invPlayer, tile));
-		this.tileFurnace = tile;
+	public GuiBlastFurnace(InventoryPlayer invPlayer, TileEntityBlastFurnace tileEntityTestContainer) {
+		super(new ContainerBlastFurnace(invPlayer, tileEntityTestContainer));
+		this.tileFurnace = tileEntityTestContainer;
 	}
 	
 	protected void drawGuiContainerForegroundLayer(int par1, int par2){
