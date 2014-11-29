@@ -34,6 +34,9 @@ public class MyBlocks {
 	public static Block blastFurnace;
 	public static Block blastFurnaceActive;
 	
+	public static Block grinder;
+	public static Block grinderActive;
+	
 	public static void initializeBlock(){
 		
 		compressedStone.setHarvestLevel("pickaxe", 1);
@@ -50,6 +53,9 @@ public class MyBlocks {
 		
 		blastFurnace = new BlastFurnace(false).setBlockName("blastfurnace").setCreativeTab(MainRegistry.tabTunnelB);
 		blastFurnaceActive = new BlastFurnace(true).setBlockName("blastfurnaceactive");
+		
+		grinder = new Grinder(false).setBlockName("grinder").setCreativeTab(MainRegistry.tabTunnelB);
+		grinderActive = new Grinder(true).setBlockName("grinderactive");
 		
 		
 	}
@@ -70,6 +76,8 @@ public class MyBlocks {
 		GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getUnlocalizedName());
 		GameRegistry.registerBlock(blastFurnace, blastFurnace.getUnlocalizedName());
 		GameRegistry.registerBlock(blastFurnaceActive, blastFurnaceActive.getUnlocalizedName());
+		GameRegistry.registerBlock(grinder, grinder.getUnlocalizedName());
+		GameRegistry.registerBlock(grinderActive, grinderActive.getUnlocalizedName());
 		
 				
 	}

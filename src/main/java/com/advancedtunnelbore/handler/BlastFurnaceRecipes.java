@@ -27,7 +27,7 @@ public class BlastFurnaceRecipes {
 		this.addRecipie(Items.iron_ingot, new ItemStack(MyItems.steelIngot), 0.0F);
 		this.addRecipie(MyItems.steelIngot, new ItemStack(MyItems.carbonSteelIngot), 0.0F);
 		this.addRecipie(MyItems.titaniumDust, new ItemStack(MyItems.titaniumIngot), 0.0F);
-		this.addRecipie(Item.getItemFromBlock(Blocks.iron_block), new ItemStack(MyItems.steelIngot), 0.8F);
+		this.addRecipie(Item.getItemFromBlock(Blocks.iron_ore), new ItemStack(MyItems.steelIngot), 0.8F);
 		
 	}
 	

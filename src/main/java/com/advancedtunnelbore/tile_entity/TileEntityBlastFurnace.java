@@ -214,7 +214,7 @@ public class TileEntityBlastFurnace extends TileEntity implements ISidedInventor
     @SideOnly(Side.CLIENT)
     public int getCookProgressScaled(int par1)
     {
-        return this.furnaceCookTime * par1 / 3600;
+        return this.furnaceCookTime * par1 / 800;
     }
 
     /**
@@ -226,7 +226,7 @@ public class TileEntityBlastFurnace extends TileEntity implements ISidedInventor
     {
         if (this.currentBurnTime == 0)
         {
-            this.currentBurnTime = 3600;
+            this.currentBurnTime = 800;
         }
 
         return this.furnaceBurnTime * par1 / this.currentBurnTime;
@@ -278,7 +278,7 @@ public class TileEntityBlastFurnace extends TileEntity implements ISidedInventor
                 {
                     ++this.furnaceCookTime;
 
-                    if (this.furnaceCookTime == 3600)
+                    if (this.furnaceCookTime == 800)
                     {
                         this.furnaceCookTime = 0;
                         this.smeltItem();
@@ -371,13 +371,13 @@ public class TileEntityBlastFurnace extends TileEntity implements ISidedInventor
 
                 if (block == Blocks.coal_block)
                 {
-                    return 3600;
+                    return 1800;
                 }
             }
 
             
-            if (item == Items.coal) return 400;
-            //if (item == Item.getItemFromBlock(Blocks.coal_block)) return 16000;
+            if (item == Items.coal) return 200;
+            //if (item == Item.getItemFromBlock(Blocks.coal_block)) return 1800;
             return GameRegistry.getFuelValue(itemstack);
         }
     }

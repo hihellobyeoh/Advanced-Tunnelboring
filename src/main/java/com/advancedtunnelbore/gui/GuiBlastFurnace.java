@@ -22,9 +22,9 @@ public class GuiBlastFurnace extends GuiContainer {
 	private TileEntityBlastFurnace tileFurnace;
 	
 	
-	public GuiBlastFurnace(InventoryPlayer invPlayer, TileEntityBlastFurnace tileEntityTestContainer) {
-		super(new ContainerBlastFurnace(invPlayer, tileEntityTestContainer));
-		this.tileFurnace = tileEntityTestContainer;
+	public GuiBlastFurnace(InventoryPlayer invPlayer, TileEntityBlastFurnace tileEntityBlastFurnaceContainer) {
+		super(new ContainerBlastFurnace(invPlayer, tileEntityBlastFurnaceContainer));
+		this.tileFurnace = tileEntityBlastFurnaceContainer;
 	}
 	
 	protected void drawGuiContainerForegroundLayer(int par1, int par2){
