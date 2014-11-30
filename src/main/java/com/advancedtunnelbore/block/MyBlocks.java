@@ -1,5 +1,7 @@
 package com.advancedtunnelbore.block;
 
+import codechicken.nei.api.API;
+
 import com.advancedtunnelbore.block.metal.BronzeBlock;
 import com.advancedtunnelbore.block.metal.CarbonSteelBlock;
 import com.advancedtunnelbore.block.metal.CopperBlock;
@@ -20,6 +22,7 @@ import net.minecraft.block.BlockFurnace;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -29,6 +32,7 @@ public class MyBlocks {
 		initializeBlock();
 		registerBlock();
 		registerOre();
+		neiHideItem();
 	}
 
 	public static Block compressedStone = new CompressedStone(Material.rock).setBlockName("compressedstone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Compressed_Stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
@@ -108,5 +112,10 @@ public class MyBlocks {
 		OreDictionary.registerOre("oreTin", tinOre);
 		OreDictionary.registerOre("oreCopper", copperOre);
 		
+	}
+	
+	public static void neiHideItem() {
+		API.hideItem(new ItemStack(blastFurnaceActive));
+		API.hideItem(new ItemStack(grinderActive));
 	}
 }
