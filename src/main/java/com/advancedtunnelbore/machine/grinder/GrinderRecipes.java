@@ -1,4 +1,4 @@
-package com.advancedtunnelbore.handler;
+package com.advancedtunnelbore.machine.grinder;
 
 import java.util.HashMap;
 import java.util.Iterator;

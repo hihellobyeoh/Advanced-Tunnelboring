@@ -1,6 +1,8 @@
-package com.advancedtunnelbore.block;
+package com.advancedtunnelbore.block.ore;
 
 import java.util.Random;
+
+import com.advancedtunnelbore.block.MyBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -8,7 +10,7 @@ import net.minecraft.item.Item;
 
 public class CopperOre extends Block {
 
-	protected CopperOre(Material p_i45394_1_) {
+	public CopperOre(Material p_i45394_1_) {
 		super(p_i45394_1_);
 	}
 	

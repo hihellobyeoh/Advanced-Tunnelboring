@@ -1,32 +1,30 @@
-package com.advancedtunnelbore.gui;
-
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
+package com.advancedtunnelbore.machine.blastfurnace;
 
 import org.lwjgl.opengl.GL11;
 
-import com.advancedtunnelbore.inventory.ContainerGrinder;
-import com.advancedtunnelbore.tile_entity.TileEntityGrinder;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.util.ResourceLocation;
+
 
 @SideOnly(Side.CLIENT)
-public class GuiGrinder extends GuiContainer {
+public class GuiBlastFurnace extends GuiContainer {
 
 	private static final ResourceLocation furnaceGuiTextures = new ResourceLocation("textures/gui/container/furnace.png");
-	private TileEntityGrinder tileGrinder;
+	private TileEntityBlastFurnace tileFurnace;
 	
 	
-	public GuiGrinder(InventoryPlayer invPlayer, TileEntityGrinder tileEntityGrinderContainer) {
-		super(new ContainerGrinder(invPlayer, tileEntityGrinderContainer));
-		this.tileGrinder = tileEntityGrinderContainer;
+	public GuiBlastFurnace(InventoryPlayer invPlayer, TileEntityBlastFurnace tileEntityBlastFurnaceContainer) {
+		super(new ContainerBlastFurnace(invPlayer, tileEntityBlastFurnaceContainer));
+		this.tileFurnace = tileEntityBlastFurnaceContainer;
 	}
 	
 	protected void drawGuiContainerForegroundLayer(int par1, int par2){
-		String string = this.tileGrinder.hasCustomInventoryName() ? this.tileGrinder.getInventoryName() : I18n.format(this.tileGrinder.getInventoryName(), new Object[0]);
+		String string = this.tileFurnace.hasCustomInventoryName() ? this.tileFurnace.getInventoryName() : I18n.format(this.tileFurnace.getInventoryName(), new Object[0]);
 		this.fontRendererObj.drawString(string, this.xSize / 2 - this.fontRendererObj.getStringWidth(string), 6, 4210752);
 		this.fontRendererObj.drawString(I18n.format("container.inventory", new Object[0]), 8, this.ySize - 94, 4210752);
 	}
@@ -40,12 +38,12 @@ public class GuiGrinder extends GuiContainer {
 	        this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 	        int i1;
 
-	        if (this.tileGrinder.isBurning()){
-	            i1 = this.tileGrinder.getBurnTimeRemainingScaled(12);
+	        if (this.tileFurnace.isBurning()){
+	            i1 = this.tileFurnace.getBurnTimeRemainingScaled(12);
 	            this.drawTexturedModalRect(k + 56, l + 36 + 12 - i1, 176, 12 - i1, 14, i1 + 2);
 	        }
 
-	        i1 = this.tileGrinder.getCookProgressScaled(24);
+	        i1 = this.tileFurnace.getCookProgressScaled(24);
 	        this.drawTexturedModalRect(k + 79, l + 34, 176, 14, i1 + 1, 16);
 	}
 

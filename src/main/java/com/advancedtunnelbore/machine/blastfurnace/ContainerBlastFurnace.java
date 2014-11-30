@@ -1,5 +1,7 @@
-package com.advancedtunnelbore.inventory;
+package com.advancedtunnelbore.machine.blastfurnace;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -8,24 +10,19 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.SlotFurnace;
 import net.minecraft.item.ItemStack;
 
-import com.advancedtunnelbore.handler.GrinderRecipes;
-import com.advancedtunnelbore.tile_entity.TileEntityGrinder;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+public class ContainerBlastFurnace extends Container {
 
-public class ContainerGrinder extends Container {
-
-	private TileEntityGrinder tileGrinder;
+	private TileEntityBlastFurnace tileFurnace;
 	private int lastCookTime;
 	private int lastBurnTime;
 	private int lastItemBurnTime;
 	
-	public ContainerGrinder(InventoryPlayer player, TileEntityGrinder tileEntityGrinderContainer){
-		this.tileGrinder = tileEntityGrinderContainer;
-		this.addSlotToContainer(new Slot(tileEntityGrinderContainer, 0, 56, 17));
-		this.addSlotToContainer(new Slot(tileEntityGrinderContainer, 1, 56, 53));
-		this.addSlotToContainer(new SlotFurnace(player.player, tileEntityGrinderContainer, 2,116,35));
+	public ContainerBlastFurnace(InventoryPlayer player, TileEntityBlastFurnace tileEntityTestContainer){
+		this.tileFurnace = tileEntityTestContainer;
+		this.addSlotToContainer(new Slot(tileEntityTestContainer, 0, 56, 17));
+		this.addSlotToContainer(new Slot(tileEntityTestContainer, 1, 56, 53));
+		this.addSlotToContainer(new SlotFurnace(player.player, tileEntityTestContainer, 2,116,35));
 		int i;
 		
 		for(int i1 = 0; i1 < 3; ++i1){
@@ -41,9 +38,9 @@ public class ContainerGrinder extends Container {
 	
 	public void addCraftingToCrafters(ICrafting craft){
 		super.addCraftingToCrafters(craft);
-		craft.sendProgressBarUpdate(this,  0,  this.tileGrinder.furnaceCookTime);
-		craft.sendProgressBarUpdate(this,  1,  this.tileGrinder.furnaceBurnTime);
-		craft.sendProgressBarUpdate(this,  2,  this.tileGrinder.currentBurnTime);
+		craft.sendProgressBarUpdate(this,  0,  this.tileFurnace.furnaceCookTime);
+		craft.sendProgressBarUpdate(this,  1,  this.tileFurnace.furnaceBurnTime);
+		craft.sendProgressBarUpdate(this,  2,  this.tileFurnace.currentBurnTime);
 	}
 	
 	public void detectAndSendChanges(){
@@ -51,34 +48,34 @@ public class ContainerGrinder extends Container {
 		for(int i = 0; i < this.crafters.size(); ++i){
 			ICrafting craft = (ICrafting) this.crafters.get(i);
 			
-			if(this.lastCookTime != this.tileGrinder.furnaceCookTime){
-				craft.sendProgressBarUpdate(this, 0, this.tileGrinder.furnaceCookTime);
+			if(this.lastCookTime != this.tileFurnace.furnaceCookTime){
+				craft.sendProgressBarUpdate(this, 0, this.tileFurnace.furnaceCookTime);
 			}
-			if(this.lastBurnTime != this.tileGrinder.furnaceBurnTime){
-				craft.sendProgressBarUpdate(this, 0, this.tileGrinder.furnaceCookTime);
+			if(this.lastBurnTime != this.tileFurnace.furnaceBurnTime){
+				craft.sendProgressBarUpdate(this, 0, this.tileFurnace.furnaceCookTime);
 			}
-			if(this.lastItemBurnTime != this.tileGrinder.currentBurnTime){
-				craft.sendProgressBarUpdate(this, 0, this.tileGrinder.furnaceCookTime);
+			if(this.lastItemBurnTime != this.tileFurnace.currentBurnTime){
+				craft.sendProgressBarUpdate(this, 0, this.tileFurnace.furnaceCookTime);
 			}
 		}
-		this.lastBurnTime = this.tileGrinder.furnaceBurnTime;
-		this.lastCookTime = this.tileGrinder.furnaceCookTime;
-		this.lastItemBurnTime = this.tileGrinder.currentBurnTime;
+		this.lastBurnTime = this.tileFurnace.furnaceBurnTime;
+		this.lastCookTime = this.tileFurnace.furnaceCookTime;
+		this.lastItemBurnTime = this.tileFurnace.currentBurnTime;
 	}
 	
 	@SideOnly(Side.CLIENT)
 	public void updateProgressBar(int par1, int par2){
 		if(par1 == 0)
-			this.tileGrinder.furnaceCookTime = par2;
+			this.tileFurnace.furnaceCookTime = par2;
 		if(par1 == 1)
-			this.tileGrinder.furnaceBurnTime = par2;
+			this.tileFurnace.furnaceBurnTime = par2;
 		if(par1 == 2)
-			this.tileGrinder.currentBurnTime = par2;
+			this.tileFurnace.currentBurnTime = par2;
 	}
 	
 	@Override
 	public boolean canInteractWith(EntityPlayer player) {
-		return this.tileGrinder.isUseableByPlayer(player);
+		return this.tileFurnace.isUseableByPlayer(player);
 	}
 	
 	public ItemStack transferStackInSlot(EntityPlayer player, int par2){
@@ -95,11 +92,11 @@ public class ContainerGrinder extends Container {
 				}
 				slot.onSlotChange(itemstack1, itemstack);
 			}else if(par2 != 1 && par2 != 0){
-				if(GrinderRecipes.smelting().getSmeltingResult(itemstack1) != null){
+				if(BlastFurnaceRecipes.smelting().getSmeltingResult(itemstack1) != null){
 					if(!this.mergeItemStack(itemstack1, 0, 1, false)){
 						return null;
 					}
-				}else if(TileEntityGrinder.isItemFuel(itemstack1)){
+				}else if(TileEntityBlastFurnace.isItemFuel(itemstack1)){
 					if(!this.mergeItemStack(itemstack1, 1, 2, false)){
 						return null;
 					}

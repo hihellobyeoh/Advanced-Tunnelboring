@@ -1,6 +1,18 @@
 package com.advancedtunnelbore.block;
 
+import com.advancedtunnelbore.block.metal.BronzeBlock;
+import com.advancedtunnelbore.block.metal.CarbonSteelBlock;
+import com.advancedtunnelbore.block.metal.CopperBlock;
+import com.advancedtunnelbore.block.metal.HardenedSteelBlock;
+import com.advancedtunnelbore.block.metal.SteelBlock;
+import com.advancedtunnelbore.block.metal.TinBlock;
+import com.advancedtunnelbore.block.metal.TitaniumBlock;
+import com.advancedtunnelbore.block.ore.CopperOre;
+import com.advancedtunnelbore.block.ore.TinOre;
+import com.advancedtunnelbore.block.ore.TitaniumOre;
 import com.advancedtunnelbore.lib.RefStrings;
+import com.advancedtunnelbore.machine.blastfurnace.BlastFurnace;
+import com.advancedtunnelbore.machine.grinder.Grinder;
 import com.advancedtunnelbore.main.MainRegistry;
 
 import net.minecraft.block.Block;

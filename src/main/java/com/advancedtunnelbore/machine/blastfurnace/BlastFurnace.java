@@ -1,10 +1,10 @@
-package com.advancedtunnelbore.block;
+package com.advancedtunnelbore.machine.blastfurnace;
 
 import java.util.Random;
 
+import com.advancedtunnelbore.block.MyBlocks;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
-import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -41,7 +41,7 @@ public class BlastFurnace extends BlockContainer
     
     private static final String __OBFID = "CL_00000248";
 
-    protected BlastFurnace(boolean isActive)
+    public BlastFurnace(boolean isActive)
     {
         super(Material.rock);
         this.isBurning2 = isActive;

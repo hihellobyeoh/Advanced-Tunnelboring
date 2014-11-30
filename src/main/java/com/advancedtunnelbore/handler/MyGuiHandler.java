@@ -1,11 +1,11 @@
 package com.advancedtunnelbore.handler;
 
-import com.advancedtunnelbore.gui.GuiBlastFurnace;
-import com.advancedtunnelbore.gui.GuiGrinder;
-import com.advancedtunnelbore.inventory.ContainerBlastFurnace;
-import com.advancedtunnelbore.inventory.ContainerGrinder;
-import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
-import com.advancedtunnelbore.tile_entity.TileEntityGrinder;
+import com.advancedtunnelbore.machine.blastfurnace.ContainerBlastFurnace;
+import com.advancedtunnelbore.machine.blastfurnace.GuiBlastFurnace;
+import com.advancedtunnelbore.machine.blastfurnace.TileEntityBlastFurnace;
+import com.advancedtunnelbore.machine.grinder.ContainerGrinder;
+import com.advancedtunnelbore.machine.grinder.GuiGrinder;
+import com.advancedtunnelbore.machine.grinder.TileEntityGrinder;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;

@@ -1,8 +1,8 @@
 package com.advancedtunnelbore.main;
 
 import com.advancedtunnelbore.lib.RefStrings;
-import com.advancedtunnelbore.tile_entity.TileEntityBlastFurnace;
-import com.advancedtunnelbore.tile_entity.TileEntityGrinder;
+import com.advancedtunnelbore.machine.blastfurnace.TileEntityBlastFurnace;
+import com.advancedtunnelbore.machine.grinder.TileEntityGrinder;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 

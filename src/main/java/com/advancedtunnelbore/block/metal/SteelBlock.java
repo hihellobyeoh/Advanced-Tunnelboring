@@ -1,11 +1,11 @@
-package com.advancedtunnelbore.block;
+package com.advancedtunnelbore.block.metal;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class TitaniumBlock extends Block{
+public class SteelBlock extends Block{
 
-	protected TitaniumBlock(Material p_i45394_1_) {
+	public SteelBlock(Material p_i45394_1_) {
 		super(p_i45394_1_);
 		// TODO Auto-generated constructor stub
 	}

@@ -1,4 +1,4 @@
-package com.advancedtunnelbore.tile_entity;
+package com.advancedtunnelbore.machine.grinder;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,15 +11,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
-
-import com.advancedtunnelbore.block.Grinder;
-import com.advancedtunnelbore.handler.GrinderRecipes;
-
+import cofh.api.energy.TileEnergyHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class TileEntityGrinder extends TileEntity implements ISidedInventory
+public class TileEntityGrinder extends TileEnergyHandler implements ISidedInventory
 {
     private static final int[] slotsTop = new int[] {0};
     private static final int[] slotsBottom = new int[] {2, 1};

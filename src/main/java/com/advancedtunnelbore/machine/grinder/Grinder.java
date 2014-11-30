@@ -1,4 +1,4 @@
-package com.advancedtunnelbore.block;
+package com.advancedtunnelbore.machine.grinder;
 
 import java.util.Random;
 
@@ -19,9 +19,9 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
+import com.advancedtunnelbore.block.MyBlocks;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
-import com.advancedtunnelbore.tile_entity.TileEntityGrinder;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -38,7 +38,7 @@ public class Grinder extends BlockContainer {
 	    
 	    private static final String __OBFID = "CL_00000248";
 
-	    protected Grinder(boolean isActive)
+	    public Grinder(boolean isActive)
 	    {
 	        super(Material.rock);
 	        this.isBurning2 = isActive;
