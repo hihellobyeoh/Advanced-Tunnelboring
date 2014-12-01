@@ -76,6 +76,9 @@ tile.tinore.name=Tin Ore
 tile.copperore.name=Copper Ore
 
 tile.blastfurnace.name=Blast Furnace
+tile.blastfurnaceactive.name=Blast Furnace
+tile.grinder.name=Grinder
+tile.grinderactive.name=Grinder
 
 
 itemGroup.tabTunnelBore=Advanced Tunnel Boring

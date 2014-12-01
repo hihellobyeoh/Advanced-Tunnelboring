@@ -1,6 +1,6 @@
 package com.advancedtunnelbore.block;
 
-import codechicken.nei.api.API;
+//import codechicken.nei.api.API;
 
 import com.advancedtunnelbore.block.metal.BronzeBlock;
 import com.advancedtunnelbore.block.metal.CarbonSteelBlock;
@@ -32,7 +32,7 @@ public class MyBlocks {
 		initializeBlock();
 		registerBlock();
 		registerOre();
-		neiHideItem();
+		//neiHideItem();
 	}
 
 	public static Block compressedStone = new CompressedStone(Material.rock).setBlockName("compressedstone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Compressed_Stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
@@ -114,8 +114,8 @@ public class MyBlocks {
 		
 	}
 	
-	public static void neiHideItem() {
+	/*public static void neiHideItem() {
 		API.hideItem(new ItemStack(blastFurnaceActive));
 		API.hideItem(new ItemStack(grinderActive));
-	}
+	}*/
 }
