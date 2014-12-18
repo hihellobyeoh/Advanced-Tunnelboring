@@ -1,6 +1,6 @@
 package com.advancedtunnelbore.main;
 
-import com.advancedtunnelbore.block.MyBlocks;
+import com.advancedtunnelbore.block.ATBBlocks;
 import com.advancedtunnelbore.handler.MyGuiHandler;
 import com.advancedtunnelbore.item.MyItems;
 import com.advancedtunnelbore.lib.RefStrings;
@@ -41,7 +41,7 @@ public class MainRegistry {
 	@EventHandler
 	public static void PreLoad(FMLPreInitializationEvent PreEvent){
 		MyItems.mainRegistry();
-		MyBlocks.mainRegistry();
+		ATBBlocks.mainRegistry();
 		CraftingManager.mainRegistry();
 		proxy.registerRenderinfo();
 		proxy.registerTileEntities();

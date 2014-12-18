@@ -1,6 +1,8 @@
 package com.advancedtunnelbore.main;
 
-import com.advancedtunnelbore.block.MyBlocks;
+import com.advancedtunnelbore.block.ATBBlocks;
+import com.advancedtunnelbore.block.metal.ATBMetals;
+import com.advancedtunnelbore.block.ore.ATBOres;
 import com.advancedtunnelbore.item.MyItems;
 
 import net.minecraft.init.Blocks;
@@ -67,11 +69,11 @@ public class CraftingManager {
 		
 		//Beams
 		GameRegistry.addRecipe(new ItemStack(MyItems.ironBeam), "XXX","XXX", 'X', Blocks.iron_block);
-		GameRegistry.addRecipe(new ItemStack(MyItems.bronzeBeam), "XXX","XXX", 'X', MyBlocks.bronzeBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.steelBeam), "XXX","XXX", 'X', MyBlocks.steelBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.hardenedSteelBeam), "XXX","XXX", 'X', MyBlocks.hardenedSteelBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.carbonSteelBeam), "XXX","XXX", 'X', MyBlocks.carbonSteelBlock);
-		GameRegistry.addRecipe(new ItemStack(MyItems.titaniumBeam), "XXX","XXX", 'X', MyBlocks.titaniumBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.bronzeBeam), "XXX","XXX", 'X', ATBMetals.bronzeBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.steelBeam), "XXX","XXX", 'X', ATBMetals.steelBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.hardenedSteelBeam), "XXX","XXX", 'X', ATBMetals.hardenedSteelBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.carbonSteelBeam), "XXX","XXX", 'X', ATBMetals.carbonSteelBlock);
+		GameRegistry.addRecipe(new ItemStack(MyItems.titaniumBeam), "XXX","XXX", 'X', ATBMetals.titaniumBlock);
 				
 		//Sticks
 		GameRegistry.addRecipe(new ItemStack(MyItems.ironStick,2), "X","X",'X', Items.iron_ingot);
@@ -86,13 +88,13 @@ public class CraftingManager {
 		
 		
 		//Metal Blocks and ingots conversions
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.bronzeBlock, true, "FFF","FFF","FFF",'F', "ingotBronze"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.copperBlock, true, "FFF","FFF","FFF",'F', "ingotCopper"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.tinBlock, true, "FFF","FFF","FFF",'F', "ingotTin"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.steelBlock, true, "FFF","FFF","FFF",'F', "ingotSteel"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.hardenedSteelBlock, true, "FFF","FFF","FFF",'F', "ingotHardenedSteel"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.carbonSteelBlock, true, "FFF","FFF","FFF",'F', "ingotCarbonSteel"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(MyBlocks.titaniumBlock, true, "FFF","FFF","FFF",'F', "ingotTitanium"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ATBMetals.bronzeBlock, true, "FFF","FFF","FFF",'F', "ingotBronze"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ATBMetals.copperBlock, true, "FFF","FFF","FFF",'F', "ingotCopper"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ATBMetals.tinBlock, true, "FFF","FFF","FFF",'F', "ingotTin"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ATBMetals.steelBlock, true, "FFF","FFF","FFF",'F', "ingotSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ATBMetals.hardenedSteelBlock, true, "FFF","FFF","FFF",'F', "ingotHardenedSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ATBMetals.carbonSteelBlock, true, "FFF","FFF","FFF",'F', "ingotCarbonSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(ATBMetals.titaniumBlock, true, "FFF","FFF","FFF",'F', "ingotTitanium"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MyItems.bronzeIngot, 9), true, "F",'F', "blockBronze"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MyItems.tinIngot, 9), true, "F",'F', "blockTin"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MyItems.copperIngot, 9), true, "F",'F', "blockCopper"));
@@ -107,9 +109,9 @@ public class CraftingManager {
 		
 		GameRegistry.addSmelting(MyItems.bronzeDust, new ItemStack(MyItems.bronzeIngot), 0.0f);
 		GameRegistry.addSmelting(MyItems.copperDust, new ItemStack(MyItems.copperIngot), 0.0f);
-		GameRegistry.addSmelting(MyBlocks.copperOre, new ItemStack(MyItems.copperIngot), 0.8f);
+		GameRegistry.addSmelting(ATBOres.copperOre, new ItemStack(MyItems.copperIngot), 0.8f);
 		GameRegistry.addSmelting(MyItems.tinDust, new ItemStack(MyItems.tinIngot), 0.0f);
-		GameRegistry.addSmelting(MyBlocks.tinOre, new ItemStack(MyItems.tinIngot), 0.8f);
+		GameRegistry.addSmelting(ATBOres.tinOre, new ItemStack(MyItems.tinIngot), 0.8f);
 		GameRegistry.addSmelting(MyItems.titaniumDust, new ItemStack(MyItems.titaniumIngot), 0.0f);
 		GameRegistry.addSmelting(MyItems.ironDust, new ItemStack(Items.iron_ingot), 0.0f);
 		GameRegistry.addSmelting(MyItems.steelIngot, new ItemStack(MyItems.hardenedSteelIngot), 0.0f);

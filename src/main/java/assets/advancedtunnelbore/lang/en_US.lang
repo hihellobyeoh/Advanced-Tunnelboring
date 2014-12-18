@@ -64,16 +64,18 @@ item.carbonsteelstick.name=Carbon Steel Shaft
 item.titaniumstick.name=Titanium Shaft
 
 tile.compressedstone.name=Compressed Stone
-tile.titaniumore.name=Ilmenite Ore
+
+tile.copperore.name=Copper Ore
+tile.tinore.name=Tin Ore
+tile.ilmeniteore.name=Ilmenite Ore
+
+tile.copperblock.name=Copper Block
+tile.tinblock.name=Tin Block
 tile.bronzeblock.name=Bronze Block
 tile.steelblock.name=Steel Block
 tile.hardenedsteelblock.name=Hardened Steel Block
 tile.carbonsteelblock.name=Carbon Steel Block
 tile.titaniumblock.name=Titanium Block
-tile.tinblock.name=Tin Block
-tile.copperblock.name=Copper Block
-tile.tinore.name=Tin Ore
-tile.copperore.name=Copper Ore
 
 tile.blastfurnace.name=Blast Furnace
 tile.blastfurnaceactive.name=Blast Furnace

@@ -5,7 +5,7 @@ import net.minecraft.block.material.Material;
 
 public class CopperBlock extends Block {
 	
-	public CopperBlock(Material p_i45394_1_) {
+	protected CopperBlock(Material p_i45394_1_) {
 		super(p_i45394_1_);
 		// TODO Auto-generated constructor stub
 	}

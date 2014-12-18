@@ -19,7 +19,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-import com.advancedtunnelbore.block.MyBlocks;
+import com.advancedtunnelbore.block.ATBBlocks;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
 
@@ -46,7 +46,7 @@ public class Grinder extends BlockContainer {
 
 	    public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
 	    {
-	        return Item.getItemFromBlock(MyBlocks.grinder);
+	        return Item.getItemFromBlock(ATBBlocks.grinder);
 	    }
 
 	    /**
@@ -122,11 +122,11 @@ public class Grinder extends BlockContainer {
 
 	        if (burning)
 	        {
-	            world.setBlock(x, y, z, MyBlocks.grinderActive);
+	            world.setBlock(x, y, z, ATBBlocks.grinderActive);
 	        }
 	        else
 	        {
-	            world.setBlock(x, y, z, MyBlocks.grinder);
+	            world.setBlock(x, y, z, ATBBlocks.grinder);
 	        }
 
 	        isBurning = false;
@@ -276,6 +276,6 @@ public class Grinder extends BlockContainer {
 	     */
 	    @SideOnly(Side.CLIENT)
 	    public Item getItem(World world, int par2, int par3, int par4){
-			return Item.getItemFromBlock(MyBlocks.grinder);
+			return Item.getItemFromBlock(ATBBlocks.grinder);
 		}
 	}

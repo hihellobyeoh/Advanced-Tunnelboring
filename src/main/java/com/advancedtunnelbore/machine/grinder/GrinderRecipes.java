@@ -10,7 +10,9 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import com.advancedtunnelbore.block.MyBlocks;
+import com.advancedtunnelbore.block.ATBBlocks;
+import com.advancedtunnelbore.block.ore.ATBOres;
+
 import com.advancedtunnelbore.item.MyItems;
 
 public class GrinderRecipes {
@@ -27,9 +29,9 @@ private static final GrinderRecipes SMELTING_BASE = new GrinderRecipes();
 		//this.addRecipie(Items.iron_ingot, new ItemStack(MyItems.steelIngot), 0.0F);
 		//this.addRecipie(MyItems.steelIngot, new ItemStack(MyItems.carbonSteelIngot), 0.0F);
 		//this.addRecipie(MyItems.titaniumDust, new ItemStack(MyItems.titaniumIngot), 0.0F);
-		this.addRecipie(Item.getItemFromBlock(MyBlocks.titaniumOre), new ItemStack(MyItems.ilmeniteDust), 0.8F);
-		this.addRecipie(Item.getItemFromBlock(MyBlocks.copperOre), new ItemStack(MyItems.copperDust), 0.8F);
-		this.addRecipie(Item.getItemFromBlock(MyBlocks.tinOre), new ItemStack(MyItems.tinDust), 0.8F);
+		this.addRecipie(Item.getItemFromBlock(ATBOres.ilmeniteOre), new ItemStack(MyItems.ilmeniteDust), 0.8F);
+		this.addRecipie(Item.getItemFromBlock(ATBOres.copperOre), new ItemStack(MyItems.copperDust), 0.8F);
+		this.addRecipie(Item.getItemFromBlock(ATBOres.tinOre), new ItemStack(MyItems.tinDust), 0.8F);
 		this.addRecipie(Item.getItemFromBlock(Blocks.iron_ore), new ItemStack(MyItems.ironDust), 0.8F);
 		//this.addRecipie(Item.getItemFromBlock(MyBlocks.titaniumOre), new ItemStack(MyItems.ilmeniteDust), 0.8F);
 		

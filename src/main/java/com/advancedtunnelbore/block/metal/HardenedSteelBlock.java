@@ -5,7 +5,7 @@ import net.minecraft.block.material.Material;
 
 public class HardenedSteelBlock extends Block{
 
-	public HardenedSteelBlock(Material p_i45394_1_) {
+	protected HardenedSteelBlock(Material p_i45394_1_) {
 		super(p_i45394_1_);
 		// TODO Auto-generated constructor stub
 	}
