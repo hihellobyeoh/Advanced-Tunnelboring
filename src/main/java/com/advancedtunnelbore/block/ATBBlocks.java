@@ -30,12 +30,6 @@ public class ATBBlocks {
 
 	public static Block compressedStone = new CompressedStone(Material.rock).setBlockName("compressedstone").setCreativeTab(MainRegistry.tabTunnelB).setBlockTextureName(RefStrings.MODID + ":Compressed_Stone_1").setStepSound(Block.soundTypePiston).setHardness(3F);
 	
-	public static Block blastFurnace;
-	public static Block blastFurnaceActive;
-	
-	public static Block grinder;
-	public static Block grinderActive;
-	
 	public static void initializeBlocks(){
 		
 		compressedStone.setHarvestLevel("pickaxe", 1);

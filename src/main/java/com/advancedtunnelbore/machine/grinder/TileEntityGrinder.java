@@ -219,7 +219,7 @@ public class TileEntityGrinder extends TileEnergyHandler implements ISidedInvent
     {
         if (this.currentBurnTime == 0)
         {
-            this.currentBurnTime = 3600;
+            this.currentBurnTime = 800;
         }
 
         return this.furnaceBurnTime * par1 / this.currentBurnTime;
@@ -369,7 +369,7 @@ public class TileEntityGrinder extends TileEnergyHandler implements ISidedInvent
             }
 
             
-            if (item == Items.coal) return 400;
+            if (item == Items.coal) return 800;
             //if (item == Item.getItemFromBlock(Blocks.coal_block)) return 16000;
             return GameRegistry.getFuelValue(itemstack);
         }

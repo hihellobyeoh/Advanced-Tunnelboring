@@ -19,7 +19,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-import com.advancedtunnelbore.block.ATBBlocks;
+import com.advancedtunnelbore.block.machine.ATBMachines;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
 
@@ -46,7 +46,7 @@ public class Grinder extends BlockContainer {
 
 	    public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
 	    {
-	        return Item.getItemFromBlock(ATBBlocks.grinder);
+	        return Item.getItemFromBlock(ATBMachines.grinder);
 	    }
 
 	    /**
@@ -91,15 +91,15 @@ public class Grinder extends BlockContainer {
 	    @SideOnly(Side.CLIENT)
 	    public IIcon getIcon(int side, int meta)
 	    {
-	        return side == 1 ? this.top : (side == 0 ? this.top : (side != meta ? this.blockIcon : this.front));
+	        return side == 1 ? this.top : (side == 0 ? this.blockIcon : (side != meta ? this.blockIcon : this.front));
 	    }
 
 	    @SideOnly(Side.CLIENT)
 	    public void registerBlockIcons(IIconRegister iconregister)
 	    {
-	        this.blockIcon = iconregister.registerIcon(this.isBurning2 ? RefStrings.MODID + ":GrinderActive" : RefStrings.MODID + ":GrinderInactive" );
-	        this.front = iconregister.registerIcon(this.isBurning2 ? RefStrings.MODID + ":GrinderActive" : RefStrings.MODID + ":GrinderInactive" );
-	        this.top = iconregister.registerIcon(RefStrings.MODID + ":GrinderTop");
+	        this.blockIcon = iconregister.registerIcon(RefStrings.MODID + ":GrinderSide");
+	        this.front = iconregister.registerIcon(RefStrings.MODID + ":Grinder");
+	        this.top = iconregister.registerIcon(this.isBurning2 ? RefStrings.MODID + ":GrinderTopActive" : RefStrings.MODID + ":GrinderTopInactive" );
 	    }
 
 	    /**
@@ -122,11 +122,11 @@ public class Grinder extends BlockContainer {
 
 	        if (burning)
 	        {
-	            world.setBlock(x, y, z, ATBBlocks.grinderActive);
+	            world.setBlock(x, y, z, ATBMachines.grinderActive);
 	        }
 	        else
 	        {
-	            world.setBlock(x, y, z, ATBBlocks.grinder);
+	            world.setBlock(x, y, z, ATBMachines.grinder);
 	        }
 
 	        isBurning = false;
@@ -276,6 +276,6 @@ public class Grinder extends BlockContainer {
 	     */
 	    @SideOnly(Side.CLIENT)
 	    public Item getItem(World world, int par2, int par3, int par4){
-			return Item.getItemFromBlock(ATBBlocks.grinder);
+			return Item.getItemFromBlock(ATBMachines.grinder);
 		}
 	}

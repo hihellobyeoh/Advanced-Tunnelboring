@@ -2,7 +2,7 @@ package com.advancedtunnelbore.machine.blastfurnace;
 
 import java.util.Random;
 
-import com.advancedtunnelbore.block.ATBBlocks;
+import com.advancedtunnelbore.block.machine.ATBMachines;
 import com.advancedtunnelbore.lib.RefStrings;
 import com.advancedtunnelbore.main.MainRegistry;
 
@@ -49,7 +49,7 @@ public class BlastFurnace extends BlockContainer
 
     public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
     {
-        return Item.getItemFromBlock(ATBBlocks.blastFurnace);
+        return Item.getItemFromBlock(ATBMachines.blastFurnace);
     }
 
     /**
@@ -125,11 +125,11 @@ public class BlastFurnace extends BlockContainer
 
         if (burning)
         {
-            world.setBlock(x, y, z, ATBBlocks.blastFurnaceActive);
+            world.setBlock(x, y, z, ATBMachines.blastFurnaceActive);
         }
         else
         {
-            world.setBlock(x, y, z, ATBBlocks.blastFurnace);
+            world.setBlock(x, y, z, ATBMachines.blastFurnace);
         }
 
         isBurning = false;
@@ -279,6 +279,6 @@ public class BlastFurnace extends BlockContainer
      */
     @SideOnly(Side.CLIENT)
     public Item getItem(World world, int par2, int par3, int par4){
-		return Item.getItemFromBlock(ATBBlocks.blastFurnace);
+		return Item.getItemFromBlock(ATBMachines.blastFurnace);
 	}
 }
